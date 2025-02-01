@@ -23,7 +23,7 @@ public class LoginPage extends BasePage{
 	public void setEmail(String email) {
 		txtLoginEmail.sendKeys(email);
 	}
-	public void btnLogin() {
+	public void clickLogin() {
 		btnLogin.click();
 	}
 }

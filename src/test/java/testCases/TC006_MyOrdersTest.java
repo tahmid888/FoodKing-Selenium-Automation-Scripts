@@ -1,18 +1,21 @@
 package testCases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistrationPage;
+import pageObjects.AddItemsToCartPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.MyOrdersPage;
+import pageObjects.ProceedToCheckoutPage;
 import pageObjects.SearchItemsPage;
 import testBase.BaseClass;
 
-public class TC003_SearchItemsTest extends BaseClass {
+public class TC006_MyOrdersTest extends BaseClass {
 
+	
 	@Test()
-	public void search() throws InterruptedException {
+	public void myOrders() throws InterruptedException {
 
 		// Home Page
 		HomePage hp = new HomePage(driver);
@@ -22,24 +25,29 @@ public class TC003_SearchItemsTest extends BaseClass {
 		LoginPage lp = new LoginPage(driver);
 		lp.setEmail(p.getProperty("email"));
 
-		// Sign Up
+		// Sign Up Page
 		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-
 		regPage.setPassword(p.getProperty("password"));
 		lp.clickLogin();
-
+		
+		//My Orders Page
+		MyOrdersPage op = new MyOrdersPage(driver);
+		op.clickAccount();
+		op.clickMyOrders();
+		op.clickSeeDetails();
 		Thread.sleep(5000);
-
-		// Search Page
-		SearchItemsPage sp = new SearchItemsPage(driver);
-		String getSearchText = p.getProperty("searchItems");
-		sp.setSearch(getSearchText);
-
-		System.out.println("Searching Text :" + getSearchText);
-
-		Assert.assertEquals("Burger", getSearchText);
-
+		 String orderId = op.getOrderId();
+		 System.out.println("Order ID: "+orderId);
+		 String orderType = op.getOrderType();
+		 System.out.println("Order Type: "+orderType);
+		
 		Thread.sleep(5000);
+		
+
+		
 
 	}
+
+	
+	
 }

@@ -10,7 +10,7 @@ import testBase.BaseClass;
 public class TC002_LoginTest extends BaseClass {
 
 	@Test()
-	public void Login() throws InterruptedException {
+	public void login() throws InterruptedException {
 		
 		// Home Page
 		HomePage hp = new HomePage(driver);
@@ -27,7 +27,7 @@ public class TC002_LoginTest extends BaseClass {
 		regPage.setPassword(p.getProperty("password"));
 		
 		
-		lp.btnLogin();
+		lp.clickLogin();
 		Thread.sleep(5000);
 
 	}
