@@ -44,6 +44,7 @@ public class TC005_ProceedToCheckoutTest extends BaseClass {
 		Thread.sleep(5000);
 		ProceedToCheckoutPage pcp = new ProceedToCheckoutPage(driver);
 		pcp.clickMyCart();
+		Thread.sleep(5000);
 		pcp.clickTakeaway();
 		Thread.sleep(5000);
 		pcp.clickProceedToCheckout();

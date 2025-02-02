@@ -32,6 +32,7 @@ public class TC003_SearchItemsTest extends BaseClass {
 
 		// Search Page
 		SearchItemsPage sp = new SearchItemsPage(driver);
+
 		String getSearchText = p.getProperty("searchItems");
 		sp.setSearch(getSearchText);
 

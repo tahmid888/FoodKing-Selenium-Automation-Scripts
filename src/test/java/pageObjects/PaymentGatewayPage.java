@@ -22,16 +22,16 @@ public class PaymentGatewayPage extends BasePage {
 	WebElement selectStripe;
 
 	// Locate card number input field (inside the iframe)
-	@FindBy(xpath = "//input[@placeholder='Card number']")
-	WebElement inputCardNumber;
+	//@FindBy(xpath = "//input[@placeholder='Card number']")
+	//WebElement inputCardNumber;
 
 	// Locate expiry date field (inside the iframe)
-	@FindBy(xpath = "//input[@placeholder='MM / YY']")
-	WebElement inputExpiryDate;
+	//@FindBy(xpath = "//input[@placeholder='MM / YY']")
+	//WebElement inputExpiryDate;
 
 	// Locate CVC field (inside the iframe)
-	@FindBy(xpath = "//input[@placeholder='CVC']")
-	WebElement inputCVC;
+	//@FindBy(xpath = "//input[@placeholder='CVC']")
+	//WebElement inputCVC;
 
 	@FindBy(xpath="//button[@id='confirmBtn']")
 	WebElement btnConfirm;
@@ -45,7 +45,9 @@ public class PaymentGatewayPage extends BasePage {
 	public void clickStripe() {
 		selectStripe.click();	
 	}
-	
+	public void clickConfirm() {
+	    wait.until(ExpectedConditions.elementToBeClickable(btnConfirm)).click();
+	}
 
 	// Wait object for explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -66,19 +68,30 @@ public class PaymentGatewayPage extends BasePage {
 
 
 	// Enter card details (inside the iframe) with Explicit Wait
+//	public void enterCardDetails(String cardNumber, String expiryDate, String cvc) {
+//		switchToStripeIframe(); // Switch to iframe first
+//
+//		wait.until(ExpectedConditions.visibilityOf(inputCardNumber)).sendKeys(cardNumber);
+//		wait.until(ExpectedConditions.visibilityOf(inputExpiryDate)).sendKeys(expiryDate);
+//		wait.until(ExpectedConditions.visibilityOf(inputCVC)).sendKeys(cvc);
+//
+//		switchToDefaultContent(); // Switch back to main content
+//	}
 	public void enterCardDetails(String cardNumber, String expiryDate, String cvc) {
-		switchToStripeIframe(); // Switch to iframe first
+	    switchToStripeIframe(); // Switch to iframe first
 
-		wait.until(ExpectedConditions.visibilityOf(inputCardNumber)).sendKeys(cardNumber);
-		wait.until(ExpectedConditions.visibilityOf(inputExpiryDate)).sendKeys(expiryDate);
-		wait.until(ExpectedConditions.visibilityOf(inputCVC)).sendKeys(cvc);
+	    WebElement cardInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Card number']")));
+	    WebElement expiryInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='MM / YY']")));
+	    WebElement cvcInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='CVC']")));
 
-		switchToDefaultContent(); // Switch back to main content
+	    cardInput.sendKeys(cardNumber);
+	    expiryInput.sendKeys(expiryDate);
+	    cvcInput.sendKeys(cvc);
+
+	    switchToDefaultContent(); // Switch back to main content
 	}
 	
-	public void clickConfirm() {
-		btnConfirm.click();	
-	}
+	
 	
 	
 }
