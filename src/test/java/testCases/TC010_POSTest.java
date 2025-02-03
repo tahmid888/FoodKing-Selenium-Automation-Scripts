@@ -11,7 +11,7 @@ import pageObjects.POSPage;
 import pageObjects.SearchItemsPage;
 import testBase.BaseClass;
 
-public class TC0010_POSTest extends BaseClass {
+public class TC010_POSTest extends BaseClass {
 
 	@Test()
 	public void pos() throws InterruptedException {
