@@ -35,12 +35,15 @@ public class TC010_POSTest extends BaseClass {
 		
 		pos.clickDashboard();
 		pos.clickPOS();
-		Thread.sleep(5000);
 		pos.clickAddItemsBtn();
-		Thread.sleep(5000);
 		pos.setSpecialInstruction(p.getProperty("addInstructions"));
-		Thread.sleep(5000);
 		pos.clickAddToCartBtn();
+		Thread.sleep(5000);
+		pos.clickDropDown();
+		pos.clickCustomerDropDown();
+		pos.setToken();
+		String ss = pos.getItemsText();
+		System.out.print("Item Name Is: " +ss);
 		Thread.sleep(5000);
 		
 		

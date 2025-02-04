@@ -28,6 +28,19 @@ public class POSPage extends BasePage{
 	@FindBy(xpath = "//span[contains(normalize-space(), 'Add to Cart')]")
 	WebElement btnAddToCart;
 	
+	@FindBy(xpath = "//span[@class='icon arrow-downward']")
+	WebElement selectDropDown;
+	
+	// Change Customer according to their Name
+	@FindBy(xpath = "//span[normalize-space()='Dipon Das']")
+	WebElement selectCustomerDropDown;
+	
+	@FindBy(xpath = "//input[@id='token']")
+	WebElement txtToken;
+	
+	@FindBy(xpath = "//table//tr[1]//td[2]//h3")
+	WebElement getTxt;
+	
 
 	public void clickDashboard() {
 		lnkDashboard.click();
@@ -49,7 +62,25 @@ public class POSPage extends BasePage{
 		btnAddToCart.click();
 	}
 	// Select customer dropdown
-	// Text token no
+	public void clickDropDown() {
+		selectDropDown.click();
+	}
+	public void clickCustomerDropDown() {
+		selectCustomerDropDown.click();
+	}
+	
+	 private static int counter = 1;
+	 
+	public void setToken() {
+		  txtToken.sendKeys(String.valueOf(counter));
+	        counter++; // Increment for the next run
+	}
+	
+	
+	public String getItemsText() {
+		return getTxt.getText();
+	}
+	
 	
 	
 	
