@@ -38,12 +38,30 @@ public class TC010_POSTest extends BaseClass {
 		pos.clickAddItemsBtn();
 		pos.setSpecialInstruction(p.getProperty("addInstructions"));
 		pos.clickAddToCartBtn();
-		Thread.sleep(5000);
 		pos.clickDropDown();
 		pos.clickCustomerDropDown();
 		pos.setToken();
-		String ss = pos.getItemsText();
-		System.out.print("Item Name Is: " +ss);
+		String itemsName = pos.getItemsText();
+		System.out.print("Item Name Is: " +itemsName+"\n");
+		
+		String itemsSize = pos.getSizeText();
+		System.out.print("Item Size Name Is: " +itemsSize+"\n");
+		
+		pos.selectPaymentMethodDropdown();
+		pos.setLastDigitCard(p.getProperty("lastFourDigit"));
+		pos.clickOrderBtn();
+		Thread.sleep(5000);
+		String printOrderId = pos.getPrintOrderIDTxt();
+		System.out.print("Print OrderID: " +printOrderId+"\n");
+		
+		String printPaymentType = pos.getPrintPaymentTypeTxt();
+		System.out.print("Print PaymentType: " +printPaymentType+"\n");
+		
+		
+//		Thread.sleep(5000);
+//		Integer itemsQuantity = pos.getQuantityText();
+//		System.out.print("Item Quantity Is: " +itemsQuantity);
+		
 		Thread.sleep(5000);
 		
 		
