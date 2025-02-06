@@ -16,40 +16,31 @@ public class TC005_ProceedToCheckoutTest extends BaseClass {
 	public void checkOut() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
-
-		// Sign Up Page
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-
-		regPage.setPassword(p.getProperty("password"));
-		lp.clickLogin();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
 
 		// Search Page
-		SearchItemsPage sp = new SearchItemsPage(driver);
+		SearchItemsPage searchPage = new SearchItemsPage(driver);
 		String getSearchText = p.getProperty("searchItems");
-		sp.setSearch(getSearchText);
-		Thread.sleep(5000);
-		// AddItemsToCartPage
-		AddItemsToCartPage acp = new AddItemsToCartPage(driver);
-		acp.setSearch();
-		acp.setInstructions(p.getProperty("addInstructions"));
-
-		acp.clickAddToCart();
-
-		Thread.sleep(5000);
-		ProceedToCheckoutPage pcp = new ProceedToCheckoutPage(driver);
-		pcp.clickMyCart();
-		Thread.sleep(5000);
-		pcp.clickTakeaway();
-		Thread.sleep(5000);
-		pcp.clickProceedToCheckout();
-		pcp.clickPlaceOrder();
-		Thread.sleep(5000);
+		searchPage.setSearch(getSearchText);
+		
+		// Add Items To Cart Page
+		AddItemsToCartPage addCartPage = new AddItemsToCartPage(driver);
+		addCartPage.setSearch();
+		addCartPage.setInstructions(p.getProperty("addInstructions"));
+		addCartPage.clickAddToCart();
+		ProceedToCheckoutPage proceedCheckoutPage = new ProceedToCheckoutPage(driver);
+		proceedCheckoutPage.clickMyCart();
+		proceedCheckoutPage.clickTakeaway();
+		proceedCheckoutPage.clickProceedToCheckout();
+		proceedCheckoutPage.clickPlaceOrder();
+		
 
 	}
 

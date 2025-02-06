@@ -15,32 +15,24 @@ public class TC003_SearchItemsTest extends BaseClass {
 	public void search() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
-
-		// Sign Up
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-
-		regPage.setPassword(p.getProperty("password"));
-		lp.clickLogin();
-
-		Thread.sleep(5000);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
 
 		// Search Page
-		SearchItemsPage sp = new SearchItemsPage(driver);
+		SearchItemsPage searchPage = new SearchItemsPage(driver);
 
 		String getSearchText = p.getProperty("searchItems");
-		sp.setSearch(getSearchText);
+		searchPage.setSearch(getSearchText);
 
 		System.out.println("Searching Text :" + getSearchText);
 
 		Assert.assertEquals("Burger", getSearchText);
-
-		Thread.sleep(5000);
 
 	}
 }

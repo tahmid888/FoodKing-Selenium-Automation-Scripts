@@ -11,8 +11,7 @@ public class POSPage extends BasePage {
 		super(driver);
 	}
 
-	@FindBy(xpath = "//body//div//header//div//div//nav//a[1]")
-	WebElement lnkDashboard;
+	
 
 	@FindBy(xpath = "//span[normalize-space()='POS']")
 	WebElement lnkPOS;
@@ -69,9 +68,7 @@ public class POSPage extends BasePage {
 	
 	
 	
-	public void clickDashboard() {
-		lnkDashboard.click();
-	}
+	
 
 	public void clickPOS() {
 		lnkPOS.click();

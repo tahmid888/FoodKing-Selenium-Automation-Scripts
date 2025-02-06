@@ -12,26 +12,25 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 	@Test()
 	public void registrationOnAccount() throws InterruptedException {
 
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
+		AccountRegistrationPage registrationPage = new AccountRegistrationPage(driver);
 
-		regPage.clickSignupLink();
-		regPage.setMobileNumber(p.getProperty("mobileNumber"));
-		regPage.clickNext();
-		Thread.sleep(5000);
-		String toastText = regPage.getToastNotification();
+		registrationPage.clickSignupLink();
+		registrationPage.setMobileNumber(p.getProperty("mobileNumber"));
+		registrationPage.clickNext();
+		String toastText = registrationPage.getToastNotification();
 		System.out.println("Toast Message: " + toastText);
 		// Assert.assertTrue(toastText.contains("Please check your phone for the code.")
 		// || toastText.contains("Please check your phone for the code."), "Toast
 		// message validation failed!");
 
-		regPage.setFirstName(p.getProperty("firstName"));
-		regPage.setLastName(p.getProperty("lastName"));
-		regPage.setEmail(p.getProperty("email"));
-		regPage.setPassword(p.getProperty("password"));
-		regPage.clickSignupBtn();
-		Thread.sleep(3000);
+		registrationPage.setFirstName(p.getProperty("firstName"));
+		registrationPage.setLastName(p.getProperty("lastName"));
+		registrationPage.setEmail(p.getProperty("email"));
+		registrationPage.setPassword(p.getProperty("password"));
+		registrationPage.clickSignupBtn();
+		
 	}
 }

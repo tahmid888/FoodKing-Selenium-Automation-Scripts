@@ -16,8 +16,22 @@ public class HomePage extends BasePage{
 	@FindBy(xpath="//span[@class='whitespace-nowrap'][normalize-space()='Log in']")
 	WebElement btnLogin;
 	
+	@FindBy(xpath = "//span[normalize-space()='Account']")
+	WebElement btnAccount;
+	
+	@FindBy(xpath = "//body//div//header//div//div//nav//a[1]")
+	WebElement lnkDashboard;
+	
 	
 	public void clickLogin() {
 		btnLogin.click();
+	}
+	
+	public void clickAccount() {
+		btnAccount.click();
+	}
+	
+	public void clickDashboard() {
+		lnkDashboard.click();
 	}
 }

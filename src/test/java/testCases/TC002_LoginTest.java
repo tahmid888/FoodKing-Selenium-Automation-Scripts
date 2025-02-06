@@ -13,22 +13,14 @@ public class TC002_LoginTest extends BaseClass {
 	public void login() throws InterruptedException {
 		
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 		
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
-		
-
-		// Sign Up
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-		
-		regPage.setPassword(p.getProperty("password"));
-		
-		
-		lp.clickLogin();
-		Thread.sleep(5000);
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
 
 	}
 

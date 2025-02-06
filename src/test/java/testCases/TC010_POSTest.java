@@ -17,44 +17,42 @@ public class TC010_POSTest extends BaseClass {
 	public void pos() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("adminEmail"));
-		lp.setPassword(p.getProperty("adminPassword"));
-		lp.clickLogin();
-
-		// My Orders Page
-		MyOrdersPage op = new MyOrdersPage(driver);
-		op.clickAccount();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("adminEmail"));
+		loginPage.setPassword(p.getProperty("adminPassword"));
+		loginPage.clickLogin();
+		homePage.clickAccount();
 		
 		// POS Page
-		POSPage pos = new POSPage(driver);
+		POSPage posPage = new POSPage(driver);
 		
-		pos.clickDashboard();
-		pos.clickPOS();
-		pos.clickAddItemsBtn();
-		pos.setSpecialInstruction(p.getProperty("addInstructions"));
-		pos.clickAddToCartBtn();
-		pos.clickDropDown();
-		pos.clickCustomerDropDown();
-		pos.setToken();
-		String itemsName = pos.getItemsText();
+		homePage.clickDashboard();
+		posPage.clickPOS();
+		posPage.clickAddItemsBtn();
+		posPage.setSpecialInstruction(p.getProperty("addInstructions"));
+		posPage.clickAddToCartBtn();
+		posPage.clickDropDown();
+		posPage.clickCustomerDropDown();
+		posPage.setToken();
+		
+		String itemsName = posPage.getItemsText();
 		System.out.print("Item Name Is: " +itemsName+"\n");
 		
-		String itemsSize = pos.getSizeText();
+		String itemsSize = posPage.getSizeText();
 		System.out.print("Item Size Name Is: " +itemsSize+"\n");
 		
-		pos.selectPaymentMethodDropdown();
-		pos.setLastDigitCard(p.getProperty("lastFourDigit"));
-		pos.clickOrderBtn();
-		Thread.sleep(5000);
-		String printOrderId = pos.getPrintOrderIDTxt();
+		posPage.selectPaymentMethodDropdown();
+		posPage.setLastDigitCard(p.getProperty("lastFourDigit"));
+		posPage.clickOrderBtn();
+
+		String printOrderId = posPage.getPrintOrderIDTxt();
 		System.out.print("Print OrderID: " +printOrderId+"\n");
 		
-		String printPaymentType = pos.getPrintPaymentTypeTxt();
+		String printPaymentType = posPage.getPrintPaymentTypeTxt();
 		System.out.print("Print PaymentType: " +printPaymentType+"\n");
 		
 		
@@ -62,7 +60,6 @@ public class TC010_POSTest extends BaseClass {
 //		Integer itemsQuantity = pos.getQuantityText();
 //		System.out.print("Item Quantity Is: " +itemsQuantity);
 		
-		Thread.sleep(5000);
 		
 		
 

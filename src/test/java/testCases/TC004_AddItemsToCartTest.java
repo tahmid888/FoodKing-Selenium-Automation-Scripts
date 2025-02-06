@@ -16,33 +16,25 @@ public class TC004_AddItemsToCartTest extends BaseClass {
 	public void addItems() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
 
-		// Sign Up Page
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-
-		regPage.setPassword(p.getProperty("password"));
-		lp.clickLogin();
-
-		
-		Thread.sleep(5000);
 		// Search Page
-		SearchItemsPage sp = new SearchItemsPage(driver);
+		SearchItemsPage searchPage = new SearchItemsPage(driver);
 		String getSearchText = p.getProperty("searchItems");
-		sp.setSearch(getSearchText);
+		searchPage.setSearch(getSearchText);
 		
 		// AddItemsToCartPage
-		AddItemsToCartPage acp = new AddItemsToCartPage(driver);
-		acp.setSearch();
-		Thread.sleep(5000);
-		acp.setInstructions(p.getProperty("addInstructions"));
-		Thread.sleep(5000);
-		acp.clickAddToCart();
+		AddItemsToCartPage addCartPage = new AddItemsToCartPage(driver);
+		addCartPage.setSearch();
+		addCartPage.setInstructions(p.getProperty("addInstructions"));
+		addCartPage.clickAddToCart();
 		
 		
 		

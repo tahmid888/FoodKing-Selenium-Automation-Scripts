@@ -18,21 +18,15 @@ public class TC009_ChangePasswordTest extends BaseClass{
 	public void changePassword() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
-
-		// Sign Up Page
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-		regPage.setPassword(p.getProperty("password"));
-		lp.clickLogin();
-		
-		//My Orders Page
-		MyOrdersPage op = new MyOrdersPage(driver);
-		op.clickAccount();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
+		homePage.clickAccount();
 		
 		// Change Password Page
 		ChangePasswordPage changePassword = new ChangePasswordPage(driver);

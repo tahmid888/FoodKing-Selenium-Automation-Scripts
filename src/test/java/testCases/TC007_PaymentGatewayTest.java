@@ -17,23 +17,20 @@ public class TC007_PaymentGatewayTest extends BaseClass{
 	public void payNow() throws InterruptedException {
 
 		// Home Page
-		HomePage hp = new HomePage(driver);
-		hp.clickLogin();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickLogin();
 
 		// Login Page
-		LoginPage lp = new LoginPage(driver);
-		lp.setEmail(p.getProperty("email"));
-
-		// Sign Up Page
-		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
-		regPage.setPassword(p.getProperty("password"));
-		lp.clickLogin();
+		LoginPage loginPage = new LoginPage(driver);
+		loginPage.setEmail(p.getProperty("email"));
+		loginPage.setPassword(p.getProperty("password"));
+		loginPage.clickLogin();
 		
 		//My Orders Page
-		MyOrdersPage op = new MyOrdersPage(driver);
-		op.clickAccount();
-		op.clickMyOrders();
-		op.clickSeeDetails();
+		MyOrdersPage ordersPage = new MyOrdersPage(driver);
+		homePage.clickAccount();
+		ordersPage.clickMyOrders();
+		ordersPage.clickSeeDetails();
 		
 		
 		//Payment Gateway Page
