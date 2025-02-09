@@ -37,13 +37,16 @@ public class TC007_PaymentGatewayTest extends BaseClass{
 		PaymentGatewayPage paymentpage = new PaymentGatewayPage(driver);
 		
 		paymentpage.clickPayNow();
+		Thread.sleep(7000);
 		paymentpage.clickStripe();
-		
+		Thread.sleep(7000);
 		paymentpage.enterCardDetails(
 			    p.getProperty("testCardNumber"), 
 			    p.getProperty("testExpiryDate"), 
 			    p.getProperty("testCVC")
 			);
+		Thread.sleep(7000);
+		
 		paymentpage.clickConfirm(); // Confirm the payment
 		
 		

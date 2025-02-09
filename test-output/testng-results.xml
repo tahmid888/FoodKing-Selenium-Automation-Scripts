@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-07T21:50:33 GMT+06:00" name="Default suite" finished-at="2025-02-07T21:50:42 GMT+06:00" duration-ms="8842">
+  <suite started-at="2025-02-10T00:10:01 GMT+06:00" name="Default suite" finished-at="2025-02-10T00:10:43 GMT+06:00" duration-ms="41497">
     <groups>
     </groups>
-    <test started-at="2025-02-07T21:50:33 GMT+06:00" name="Default test" finished-at="2025-02-07T21:50:42 GMT+06:00" duration-ms="8842">
-      <class name="testCases.TC014_TableOrdersTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC014_TableOrdersTest@1aafa419]" started-at="2025-02-07T21:50:33 GMT+06:00" name="setup" finished-at="2025-02-07T21:50:38 GMT+06:00" duration-ms="4901" status="PASS">
+    <test started-at="2025-02-10T00:10:01 GMT+06:00" name="Default test" finished-at="2025-02-10T00:10:43 GMT+06:00" duration-ms="41497">
+      <class name="testCases.TC007_PaymentGatewayTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC007_PaymentGatewayTest@1aafa419]" started-at="2025-02-10T00:10:01 GMT+06:00" name="setup" finished-at="2025-02-10T00:10:06 GMT+06:00" duration-ms="4405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="tableOrders()[pri:0, instance:testCases.TC014_TableOrdersTest@1aafa419]" started-at="2025-02-07T21:50:38 GMT+06:00" name="tableOrders" finished-at="2025-02-07T21:50:41 GMT+06:00" duration-ms="3170" status="PASS">
+        <test-method signature="payNow()[pri:0, instance:testCases.TC007_PaymentGatewayTest@1aafa419]" started-at="2025-02-10T00:10:06 GMT+06:00" name="payNow" finished-at="2025-02-10T00:10:42 GMT+06:00" duration-ms="36839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tableOrders -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC014_TableOrdersTest@1aafa419]" started-at="2025-02-07T21:50:41 GMT+06:00" name="tearDown" finished-at="2025-02-07T21:50:42 GMT+06:00" duration-ms="745" status="PASS">
+        </test-method> <!-- payNow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC007_PaymentGatewayTest@1aafa419]" started-at="2025-02-10T00:10:42 GMT+06:00" name="tearDown" finished-at="2025-02-10T00:10:43 GMT+06:00" duration-ms="223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC014_TableOrdersTest -->
+      </class> <!-- testCases.TC007_PaymentGatewayTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

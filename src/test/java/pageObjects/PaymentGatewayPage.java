@@ -1,8 +1,10 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,21 +23,8 @@ public class PaymentGatewayPage extends BasePage {
 	@FindBy(xpath = "//input[@id='stripe']")
 	WebElement selectStripe;
 
-	// Locate card number input field (inside the iframe)
-	//@FindBy(xpath = "//input[@placeholder='Card number']")
-	//WebElement inputCardNumber;
-
-	// Locate expiry date field (inside the iframe)
-	//@FindBy(xpath = "//input[@placeholder='MM / YY']")
-	//WebElement inputExpiryDate;
-
-	// Locate CVC field (inside the iframe)
-	//@FindBy(xpath = "//input[@placeholder='CVC']")
-	//WebElement inputCVC;
-
-	@FindBy(xpath="//button[@id='confirmBtn']")
+	@FindBy(xpath = "//button[@id='confirmBtn']")
 	WebElement btnConfirm;
-	
 	
 	
 	public void clickPayNow() {
@@ -43,17 +32,46 @@ public class PaymentGatewayPage extends BasePage {
 	}
 
 	public void clickStripe() {
-		selectStripe.click();	
+		selectStripe.click();
 	}
-	public void clickConfirm() {
-	    wait.until(ExpectedConditions.elementToBeClickable(btnConfirm)).click();
-	}
-
 	// Wait object for explicit waits
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		
+	//public void clickConfirm() {
+		
+	//	wait.until(ExpectedConditions.elementToBeClickable(btnConfirm)).click();
+	//}
+		
+		
+		// Updated clickConfirm() method with JavaScript click
+		public void clickConfirm() {
+		    try {
+		        System.out.println("Trying to click Confirm button...");
+
+		        // Wait for the button to be present in the DOM
+		        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("confirmBtn")));
+
+		        // Wait for the button to be visible and clickable
+		        wait.until(ExpectedConditions.visibilityOf(btnConfirm));
+		        wait.until(ExpectedConditions.elementToBeClickable(btnConfirm));
+
+		        // Scroll into view
+		        JavascriptExecutor js = (JavascriptExecutor) driver;
+		        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", btnConfirm);
+		        Thread.sleep(500);
+
+		        // Click using JavaScript
+		        js.executeScript("arguments[0].click();", btnConfirm);
+
+		        System.out.println("Confirm button clicked successfully.");
+
+		    } catch (Exception e) {
+		        throw new RuntimeException("Failed to click Confirm button: " + e.getMessage());
+		    }
+		}
 
 	
-	
+
 	// Method to dynamically switch to the Stripe iframe with Explicit Wait
 	public void switchToStripeIframe() {
 		WebElement stripeIframe = wait.until(ExpectedConditions
@@ -66,32 +84,22 @@ public class PaymentGatewayPage extends BasePage {
 		driver.switchTo().defaultContent();
 	}
 
-
-	// Enter card details (inside the iframe) with Explicit Wait
-//	public void enterCardDetails(String cardNumber, String expiryDate, String cvc) {
-//		switchToStripeIframe(); // Switch to iframe first
-//
-//		wait.until(ExpectedConditions.visibilityOf(inputCardNumber)).sendKeys(cardNumber);
-//		wait.until(ExpectedConditions.visibilityOf(inputExpiryDate)).sendKeys(expiryDate);
-//		wait.until(ExpectedConditions.visibilityOf(inputCVC)).sendKeys(cvc);
-//
-//		switchToDefaultContent(); // Switch back to main content
-//	}
+	
 	public void enterCardDetails(String cardNumber, String expiryDate, String cvc) {
-	    switchToStripeIframe(); // Switch to iframe first
+		switchToStripeIframe(); // Switch to iframe first
 
-	    WebElement cardInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Card number']")));
-	    WebElement expiryInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='MM / YY']")));
-	    WebElement cvcInput = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='CVC']")));
+		WebElement cardInput = wait
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='Card number']")));
+		WebElement expiryInput = wait
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='MM / YY']")));
+		WebElement cvcInput = wait
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@placeholder='CVC']")));
 
-	    cardInput.sendKeys(cardNumber);
-	    expiryInput.sendKeys(expiryDate);
-	    cvcInput.sendKeys(cvc);
+		cardInput.sendKeys(cardNumber);
+		expiryInput.sendKeys(expiryDate);
+		cvcInput.sendKeys(cvc);
 
-	    switchToDefaultContent(); // Switch back to main content
+		switchToDefaultContent(); // Switch back to main content
 	}
-	
-	
-	
-	
+
 }

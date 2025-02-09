@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC014_TableOrdersTest">
+      <class name="testCases.TC007_PaymentGatewayTest">
         <methods>
-          <include name="tableOrders"/>
           <include name="tearDown"/>
+          <include name="payNow"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC014_TableOrdersTest -->
+      </class> <!-- testCases.TC007_PaymentGatewayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
