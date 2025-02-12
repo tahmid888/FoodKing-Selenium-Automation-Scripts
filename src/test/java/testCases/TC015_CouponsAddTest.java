@@ -17,7 +17,7 @@ public class TC015_CouponsAddTest extends BaseClass {
 	public void addCoupons() throws InterruptedException {
 
 		
-		try {
+		//try {
 
 			// Home Page
 			HomePage homePage = new HomePage(driver);
@@ -35,16 +35,29 @@ public class TC015_CouponsAddTest extends BaseClass {
 			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickCoupon();
 			couponsPage.clickAddCoupon();
+			
+			couponsPage.setName(p.getProperty("couponName"));
+			couponsPage.setCode(p.getProperty("couponCode"));
+			couponsPage.setDiscount(p.getProperty("couponDiscount"));
+			couponsPage.clickStartDate();
+			couponsPage.clickSDate();
+			couponsPage.clickEndDate();
+			couponsPage.clickEDate();
+			couponsPage.setMinimumOrder(p.getProperty("couponMinimumOrder"));
+			couponsPage.setMaximumDiscount(p.getProperty("couponMaximumDiscount"));
+			couponsPage.setLimitUser(p.getProperty("coponLimitUser"));
+			couponsPage.selectFileUpload();
 			Thread.sleep(5000);
-			couponsPage.setStartDate();
+			couponsPage.setDescription(p.getProperty("couponDescription"));
+			couponsPage.clickSaveBtn();
 			Thread.sleep(5000);
 			
 			
 			
-		} catch (Exception e) {
-			Assert.fail();
+		//} catch (Exception e) {
+		//	Assert.fail();
 
-		}
+		//}
 	}
 
 }

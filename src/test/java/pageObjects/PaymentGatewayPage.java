@@ -42,7 +42,7 @@ public class PaymentGatewayPage extends BasePage {
 	//	wait.until(ExpectedConditions.elementToBeClickable(btnConfirm)).click();
 	//}
 		
-		
+		//This isn't working as expected
 		// Updated clickConfirm() method with JavaScript click
 		public void clickConfirm() {
 		    try {
