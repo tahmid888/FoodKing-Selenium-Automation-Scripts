@@ -17,7 +17,7 @@ public class TC015_CouponsAddTest extends BaseClass {
 	public void addCoupons() throws InterruptedException {
 
 		
-		//try {
+		try {
 
 			// Home Page
 			HomePage homePage = new HomePage(driver);
@@ -50,14 +50,14 @@ public class TC015_CouponsAddTest extends BaseClass {
 			Thread.sleep(5000);
 			couponsPage.setDescription(p.getProperty("couponDescription"));
 			couponsPage.clickSaveBtn();
-			Thread.sleep(5000);
 			
 			
 			
-		//} catch (Exception e) {
-		//	Assert.fail();
+		} catch (Exception e) {
+			e.printStackTrace(); // Logs the exception for debugging
+            Assert.fail("Test failed due to an exception: " + e.getMessage());
 
-		//}
+		}
 	}
 
 }

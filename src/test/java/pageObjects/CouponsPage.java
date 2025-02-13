@@ -20,12 +20,13 @@ public class CouponsPage extends BasePage {
 		super(driver);
 	}
 
+	// Coupon Menu
 	@FindBy(xpath = "//span[normalize-space()=\"Coupons\"]")
 	WebElement lnkCoupon;
-
+	//Add Coupon
 	@FindBy(xpath = "//span[normalize-space()=\"Add Coupon\"]")
 	WebElement btnAddCoupon;
-
+	// Coupon Form
 	@FindBy(xpath = "//input[@id=\"name\"]")
 	WebElement txtName;
 	@FindBy(xpath = "//input[@id=\"code\"]")
@@ -40,10 +41,6 @@ public class CouponsPage extends BasePage {
 	WebElement txtLimitUser;
 	@FindBy(xpath = "//textarea[@id=\"description\"]")
 	WebElement txtDescription;
-
-	// File Uploading Xpath
-	@FindBy(xpath = "//input[@type='file' and contains(@accept, 'image/')]")
-	WebElement fileUpload;
 
 	// Dates
 	// Only Click Start Date
@@ -75,8 +72,8 @@ public class CouponsPage extends BasePage {
 	}
 
 	public void clickAddCoupon() {
-		wait.until(ExpectedConditions.visibilityOf(btnAddCoupon)).click();
-		//btnAddCoupon.click();
+		//wait.until(ExpectedConditions.visibilityOf(btnAddCoupon)).click();
+		btnAddCoupon.click();
 	}
 
 	public void setName(String name) {
@@ -103,13 +100,17 @@ public class CouponsPage extends BasePage {
 		txtLimitUser.sendKeys(limitUser);
 	}
 
+	
 	  public void selectFileUpload() {
-	        // Provide the correct file path (use double backslashes for Windows paths)
-	        String imagePath = "C:\\Users\\tahmi\\Downloads\\selenium\\demopngtest.png";
-
-	        wait.until(ExpectedConditions.elementToBeClickable(fileUpload));
-
-	        fileUpload.sendKeys(imagePath);
+		  
+	      // Wait until the file input element is visible
+          WebElement fileInput = wait.until(
+              ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='file' and @id='image']"))
+          );
+          // Provide the full path to the image you wish to upload (use double backslashes on Windows)
+          String imagePath = "C:\\Users\\tahmi\\Downloads\\selenium\\demopngtest.png";
+          fileInput.sendKeys(imagePath);
+	     
 	    }
 
 	public void setDescription(String description) {
