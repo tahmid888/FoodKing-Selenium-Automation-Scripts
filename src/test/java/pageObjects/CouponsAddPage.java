@@ -14,16 +14,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CouponsPage extends BasePage {
+public class CouponsAddPage extends BasePage {
 
-	public CouponsPage(WebDriver driver) {
+	public CouponsAddPage(WebDriver driver) {
 		super(driver);
 	}
 
 	// Coupon Menu
 	@FindBy(xpath = "//span[normalize-space()=\"Coupons\"]")
 	WebElement lnkCoupon;
-	//Add Coupon
+	// Add Coupon
 	@FindBy(xpath = "//span[normalize-space()=\"Add Coupon\"]")
 	WebElement btnAddCoupon;
 	// Coupon Form
@@ -39,8 +39,6 @@ public class CouponsPage extends BasePage {
 	WebElement txtMaximumDiscount;
 	@FindBy(xpath = "//input[@id=\"limit_per_user\"]")
 	WebElement txtLimitUser;
-	@FindBy(xpath = "//textarea[@id=\"description\"]")
-	WebElement txtDescription;
 
 	// Dates
 	// Only Click Start Date
@@ -63,6 +61,13 @@ public class CouponsPage extends BasePage {
 	@FindBy(xpath = "//span[normalize-space()=\"Save\"]")
 	WebElement btnSave;
 	
+
+	@FindBy(xpath = "//div[contains(normalize-space(), \"Auth-\")]")
+	WebElement getTxtName;
+	
+
+	//****************************************************************************//
+
 	// Wait object for explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -72,8 +77,7 @@ public class CouponsPage extends BasePage {
 	}
 
 	public void clickAddCoupon() {
-		//wait.until(ExpectedConditions.visibilityOf(btnAddCoupon)).click();
-		btnAddCoupon.click();
+		wait.until(ExpectedConditions.elementToBeClickable(btnAddCoupon)).click();
 	}
 
 	public void setName(String name) {
@@ -100,21 +104,20 @@ public class CouponsPage extends BasePage {
 		txtLimitUser.sendKeys(limitUser);
 	}
 
-	
-	  public void selectFileUpload() {
-		  
-	      // Wait until the file input element is visible
-          WebElement fileInput = wait.until(
-              ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='file' and @id='image']"))
-          );
-          // Provide the full path to the image you wish to upload (use double backslashes on Windows)
-          String imagePath = "C:\\Users\\tahmi\\Downloads\\selenium\\demopngtest.png";
-          fileInput.sendKeys(imagePath);
-	     
-	    }
+	public void selectFileUpload() {
+
+		WebElement fileInput = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='file' and @id='image']")));
+		// Provide the full path to the image you wish to upload (use double backslashes
+		// on Windows)
+		String imagePath = "C:\\Users\\tahmi\\Downloads\\selenium\\demopngtest.png";
+		fileInput.sendKeys(imagePath);
+
+	}
 
 	public void setDescription(String description) {
-		txtDescription.sendKeys(description);
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id=\"description\"]"))).sendKeys(description);
+		// txtDescription.sendKeys(description);
 	}
 
 	// Dates
@@ -133,8 +136,19 @@ public class CouponsPage extends BasePage {
 	public void clickEDate() {
 		selectEDate.click();
 	}
+
+	
+	// Save button
 	public void clickSaveBtn() {
-		btnSave.click();
+		wait.until(ExpectedConditions.elementToBeClickable(btnSave)).click();
+
 	}
+	
+	public String getNameTxt() {
+	return 	getTxtName.getText();
+
+	}
+
+	
 
 }

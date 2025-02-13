@@ -1,16 +1,17 @@
 package testCases;
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsPage;
+import pageObjects.CouponsAddPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.OnlineOrdersPage;
 import pageObjects.POSOrdersPage;
 import pageObjects.TableOrdersPage;
 import testBase.BaseClass;
-
+import org.testng.asserts.SoftAssert;
 public class TC015_CouponsAddTest extends BaseClass {
 
 	@Test()
@@ -32,7 +33,7 @@ public class TC015_CouponsAddTest extends BaseClass {
 			homePage.clickDashboard();
 
 			// Coupons Page
-			CouponsPage couponsPage = new CouponsPage(driver);
+			CouponsAddPage couponsPage = new CouponsAddPage(driver);
 			couponsPage.clickCoupon();
 			couponsPage.clickAddCoupon();
 			
@@ -47,14 +48,19 @@ public class TC015_CouponsAddTest extends BaseClass {
 			couponsPage.setMaximumDiscount(p.getProperty("couponMaximumDiscount"));
 			couponsPage.setLimitUser(p.getProperty("coponLimitUser"));
 			couponsPage.selectFileUpload();
-			Thread.sleep(5000);
 			couponsPage.setDescription(p.getProperty("couponDescription"));
 			couponsPage.clickSaveBtn();
+			
+			// Assert
+			String expectedName = couponsPage.getNameTxt();
+			Assert.assertTrue(expectedName.contains("Auth-2025"), "Coupon name 'Auth-2025' is not found in the extracted text!");
+
 			
 			
 			
 		} catch (Exception e) {
-			e.printStackTrace(); // Logs the exception for debugging
+			// Logs the exception for debugging
+			e.printStackTrace(); 
             Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
