@@ -90,6 +90,7 @@ selenium-testng-framework
  - Open src/test/java/tests/YourTestClass.java
  - Click on the Run button or use the shortcut (Shift + F10 in IntelliJ)
 ```
+
 ## 📊 Test Reports 
 - After running the tests, TestNG generates an HTML report under the test-output folder.
 - Open test-output/index.html to view the results.
