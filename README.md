@@ -89,7 +89,7 @@ selenium-testng-framework
  - Running a specific test class (from IDE):
  - Open src/test/java/tests/YourTestClass.java
  - Click on the Run button or use the shortcut (Shift + F10 in IntelliJ)
-```
+   ```
 
 ## 📊 Test Reports 
 - After running the tests, TestNG generates an HTML report under the test-output folder.
@@ -101,7 +101,6 @@ Copyright © 2025, iNiLabs Ltd.
 [iNiLabs](https://inilabs.net/)
 
 ![Logo](https://kiosk.reworqx.com/images/theme/theme-logo.png)
-
 
 ## Demo
 
