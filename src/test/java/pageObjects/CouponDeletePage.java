@@ -1,11 +1,14 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CouponDeletePage extends BasePage {
 
@@ -13,8 +16,13 @@ public class CouponDeletePage extends BasePage {
 		super(driver);
 	}
 
-	//@FindBy(xpath = ".//td[7]//button[2]")
-	//WebElement btnDelete;
+	@FindBy(xpath = "//button[normalize-space()=\"Yes, Delete it!\"]")
+	WebElement btnDelete;
+	@FindBy(xpath = "//div[contains(normalize-space(), \"Auth-\")]")
+	WebElement getTxtName;
+
+	// Wait object for explicit waits
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	public void chooseNameToDelete() {
 
@@ -43,6 +51,17 @@ public class CouponDeletePage extends BasePage {
 		}
 
 	}
-	
-	
+
+	public String getNameTxt() {
+		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(normalize-space(), \"Auth-\")]")))
+				.getText();
+
+	}
+
+	public void deleteBtn() {
+		wait.until(ExpectedConditions.visibilityOf(btnDelete)).click();
+
+		
+	}
+
 }

@@ -27,7 +27,7 @@ public class CouponsEditPage extends BasePage {
 	WebElement txtName;
 	@FindBy(xpath = "//input[@id=\"code\"]")
 	WebElement txtCode;
-	
+
 	@FindBy(xpath = "//div[contains(normalize-space(), \"Auth-\")]")
 	WebElement getTxtName;
 
@@ -49,17 +49,16 @@ public class CouponsEditPage extends BasePage {
 		txtCode.clear();
 		txtCode.sendKeys(code);
 	}
-	 //getTxtName.getText();
-	 public String getNameTxt() {
-		// return  wait.until(ExpectedConditions.visibilityOf(getTxtName)).getText();
-		 return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(normalize-space(), \"Auth-\")]"))).getText();
 
+	public String getNameTxt() {
+		return wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(normalize-space(), \"Auth-\")]")))
+				.getText();
 
-	    }
-
+	}
 
 	public void chooseNameToUpdate() {
-		
+
 		String couponName = "Auth-2025"; // Coupon to search for
 		boolean couponFound = false;
 
@@ -76,7 +75,7 @@ public class CouponsEditPage extends BasePage {
 				WebElement editButton = row.findElement(By.xpath(".//td[7]//button"));
 				editButton.click();
 				// Exit loop after finding and editing the coupon
-				break; 
+				break;
 			}
 		}
 

@@ -39,6 +39,7 @@ public class TC016_CouponsEditTest extends BaseClass {
 			couponsEditPage.setCode(p.getProperty("updateCouponCode"));
 			couponsPage.clickSaveBtn();
 			Thread.sleep(5000);
+			
 			// Assert
 			String expectedName = couponsEditPage.getNameTxt();
 			Assert.assertTrue(expectedName.contains("Auth-2026"),

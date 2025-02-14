@@ -32,16 +32,16 @@ public class TC017_CouponDeleteTest extends BaseClass {
 			CouponsAddPage couponsPage = new CouponsAddPage(driver);
 			couponsPage.clickCoupon();
 
-			// Coupons Edit Page
+			// Coupons Delete Page
 			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
-			Thread.sleep(5000);
 			couponDeletePage.chooseNameToDelete();
-			Thread.sleep(5000);
+			couponDeletePage.deleteBtn();
 			
 			// Assert
-			//String expectedName = couponsEditPage.getNameTxt();
-			//Assert.assertNotEquals(expectedName.contains("Auth-2026"),
-			//		"Coupon name 'Auth-2026' is NOT found in the extracted text!");
+			String expectedName = couponDeletePage.getNameTxt();
+			Assert.assertFalse(expectedName.contains("Auth-2026"),
+				    "Coupon name 'Auth-2026' is still found in the extracted text after deletion!");
+
 
 		} catch (Exception e) {
 			// Logs the exception for debugging
