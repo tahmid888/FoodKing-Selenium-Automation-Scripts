@@ -1,64 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T14:56:45 GMT+06:00" name="Default suite" finished-at="2025-02-14T14:56:51 GMT+06:00" duration-ms="5962">
+  <suite started-at="2025-02-14T22:30:15 GMT+06:00" name="Default suite" finished-at="2025-02-14T22:30:23 GMT+06:00" duration-ms="8042">
     <groups>
     </groups>
-    <test started-at="2025-02-14T14:56:45 GMT+06:00" name="Default test" finished-at="2025-02-14T14:56:51 GMT+06:00" duration-ms="5962">
-      <class name="testCases.TC017_CouponDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC017_CouponDeleteTest@1aafa419]" started-at="2025-02-14T14:56:45 GMT+06:00" name="setup" finished-at="2025-02-14T14:56:48 GMT+06:00" duration-ms="2891" status="PASS">
+    <test started-at="2025-02-14T22:30:15 GMT+06:00" name="Default test" finished-at="2025-02-14T22:30:23 GMT+06:00" duration-ms="8042">
+      <class name="testCases.TC018_OffersAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC018_OffersAddTest@1aafa419]" started-at="2025-02-14T22:30:15 GMT+06:00" name="setup" finished-at="2025-02-14T22:30:19 GMT+06:00" duration-ms="4478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteCoupons()[pri:0, instance:testCases.TC017_CouponDeleteTest@1aafa419]" started-at="2025-02-14T14:56:48 GMT+06:00" name="deleteCoupons" finished-at="2025-02-14T14:56:51 GMT+06:00" duration-ms="2874" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Coupon name 'Auth-2026' is still found in the extracted text after deletion! expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Coupon name 'Auth-2026' is still found in the extracted text after deletion! expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertFalse(Assert.java:67)
-at testCases.TC017_CouponDeleteTest.deleteCoupons(TC017_CouponDeleteTest.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="addOffers()[pri:0, instance:testCases.TC018_OffersAddTest@1aafa419]" started-at="2025-02-14T22:30:19 GMT+06:00" name="addOffers" finished-at="2025-02-14T22:30:23 GMT+06:00" duration-ms="3394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteCoupons -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC017_CouponDeleteTest@1aafa419]" started-at="2025-02-14T14:56:51 GMT+06:00" name="tearDown" finished-at="2025-02-14T14:56:51 GMT+06:00" duration-ms="164" status="PASS">
+        </test-method> <!-- addOffers -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC018_OffersAddTest@1aafa419]" started-at="2025-02-14T22:30:23 GMT+06:00" name="tearDown" finished-at="2025-02-14T22:30:23 GMT+06:00" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC017_CouponDeleteTest -->
+      </class> <!-- testCases.TC018_OffersAddTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
