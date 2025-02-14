@@ -1,5 +1,4 @@
-# FoodKing-Selenium-Automation-Scripts
-# Selenium Automation with TestNG
+# FoodKing Selenium Automation with TestNG
 
 ## 🚀 Overview  
 
@@ -90,7 +89,10 @@ selenium-testng-framework
  - Open src/test/java/tests/YourTestClass.java
  - Click on the Run button or use the shortcut (Shift + F10 in IntelliJ)
    ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7eb3553 (Git-Readme-Added)
 ## 📊 Test Reports 
 - After running the tests, TestNG generates an HTML report under the test-output folder.
 - Open test-output/index.html to view the results.
