@@ -7,12 +7,13 @@ import pageObjects.CouponsAddPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.OffersAddPage;
+import pageObjects.OffersEditPage;
 import testBase.BaseClass;
 
-public class TC018_OffersAddTest extends BaseClass{
-	
+public class TC019_OffersEditTest extends BaseClass {
+
 	@Test()
-	public void addOffers() throws InterruptedException {
+public void addOffers() throws InterruptedException {
 
 		
 		try {
@@ -30,26 +31,26 @@ public class TC018_OffersAddTest extends BaseClass{
 			homePage.clickDashboard();
 
 
-			// Offers Page
+			// Offers Add Page
 			OffersAddPage offersAddPage = new OffersAddPage(driver);
 			offersAddPage.clickOffers();
-			offersAddPage.addOffersBtn();
-			offersAddPage.setName(p.getProperty("offerName"));
-			offersAddPage.setDiscountPercentage(p.getProperty("offerDiscountPercentage"));
-			offersAddPage.clickStartDate();
-			offersAddPage.clickSDate();
-			offersAddPage.clickEndDate();
-			offersAddPage.clickEDate();
-			offersAddPage.selectFileUpload();
+			
+			// Offer Edit Page
+			OffersEditPage offersEditPage = new OffersEditPage(driver);
+			offersEditPage.chooseNameToUpdate();
+			offersEditPage.setName(p.getProperty("updateOfferName"));
+			offersEditPage.setDiscountPercentage(p.getProperty("updateOfferDiscountPercentage"));
 			
 			// Coupons Add Page
 			CouponsAddPage couponsPage = new CouponsAddPage(driver);
 			couponsPage.clickSaveBtn();
 			
-			
+			Thread.sleep(5000);
 			// Assert
-			String expectedName = offersAddPage.getNameTxt();
-			Assert.assertTrue(expectedName.toLowerCase().contains("offer-2025"));
+			String expectedName = offersEditPage.getNameTxt();
+			System.out.println("Extracted Text: " + expectedName);
+
+			Assert.assertTrue(expectedName.toLowerCase().contains("offer-2026"));
 
 			
 			

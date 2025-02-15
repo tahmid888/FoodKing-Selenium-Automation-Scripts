@@ -53,7 +53,6 @@ public class OffersAddPage extends BasePage {
 
 	public void clickOffers() {
 		wait.until(ExpectedConditions.elementToBeClickable(lnkOffers)).click();
-		// lnkOffers.click();
 	}
 
 	public void addOffersBtn() {
@@ -61,12 +60,10 @@ public class OffersAddPage extends BasePage {
 	}
 
 	public void setName(String name) {
-
 		txtName.sendKeys(name);
 	}
 
 	public void setDiscountPercentage(String amount) {
-
 		txtAmount.sendKeys(amount);
 	}
 
@@ -98,12 +95,10 @@ public class OffersAddPage extends BasePage {
 	}
 
 	public void clickActiveBtn() {
-
 		radioActiveBtn.click();
 	}
 	
 	public String getNameTxt() {
 		return 	getTxtName.getText();
-
 		}
 }

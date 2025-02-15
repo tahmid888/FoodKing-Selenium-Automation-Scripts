@@ -53,7 +53,7 @@ public class CouponDeletePage extends BasePage {
 	}
 
 	public String getNameTxt() {
-		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(normalize-space(), \"Auth-\")]")))
+		return wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//td[contains(normalize-space(), \"Auth-\")]")))
 				.getText();
 
 	}

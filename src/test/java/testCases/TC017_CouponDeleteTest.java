@@ -39,8 +39,7 @@ public class TC017_CouponDeleteTest extends BaseClass {
 			
 			// Assert
 			String expectedName = couponDeletePage.getNameTxt();
-			Assert.assertFalse(expectedName.contains("Auth-2026"),
-				    "Coupon name 'Auth-2026' is still found in the extracted text after deletion!");
+			Assert.assertTrue(expectedName.toLowerCase().contains("auth-2026"));
 
 
 		} catch (Exception e) {

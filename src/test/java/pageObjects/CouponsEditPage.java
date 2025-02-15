@@ -52,7 +52,7 @@ public class CouponsEditPage extends BasePage {
 
 	public String getNameTxt() {
 		return wait.until(
-				ExpectedConditions.presenceOfElementLocated(By.xpath("//div[contains(normalize-space(), \"Auth-\")]")))
+				ExpectedConditions.presenceOfElementLocated(By.xpath("//td[contains(normalize-space(), \"Auth-\")]")))
 				.getText();
 
 	}

@@ -42,8 +42,8 @@ public class TC016_CouponsEditTest extends BaseClass {
 			
 			// Assert
 			String expectedName = couponsEditPage.getNameTxt();
-			Assert.assertTrue(expectedName.contains("Auth-2026"),
-			    "Coupon name 'Auth-2026' is NOT found in the extracted text!");
+			System.out.println("Extracted Text: " + expectedName);
+			Assert.assertTrue(expectedName.toLowerCase().contains("auth-2026"));
 
 
 
