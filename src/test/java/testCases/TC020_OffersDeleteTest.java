@@ -1,21 +1,24 @@
 package testCases;
 
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageObjects.CouponDeletePage;
 import pageObjects.CouponsAddPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.OffersAddPage;
+import pageObjects.OffersDeletePage;
 import pageObjects.OffersEditPage;
 import testBase.BaseClass;
 
-public class TC019_OffersEditTest extends BaseClass {
+public class TC020_OffersDeleteTest extends BaseClass {
 
+	
 	@Test()
-public void addOffers() {
+	public void offersDelete() {
 
-		
 		try {
 
 			// Home Page
@@ -30,34 +33,30 @@ public void addOffers() {
 			homePage.clickAccount();
 			homePage.clickDashboard();
 
-
 			// Offers Add Page
 			OffersAddPage offersAddPage = new OffersAddPage(driver);
 			offersAddPage.clickOffers();
+
+			// Offers Delete Page
+			OffersDeletePage offersDeletePage = new OffersDeletePage(driver);
+			offersDeletePage.chooseNameToDelete();
 			
-			// Offer Edit Page
-			OffersEditPage offersEditPage = new OffersEditPage(driver);
-			offersEditPage.chooseNameToUpdate();
-			offersEditPage.setName(p.getProperty("updateOfferName"));
-			offersEditPage.setDiscountPercentage(p.getProperty("updateOfferDiscountPercentage"));
-			
-			// Coupons Add Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
-			couponsPage.clickSaveBtn();
+			// Coupon Delete Page
+			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
+			couponDeletePage.deleteBtn();
 			
 			// Assert
-			String expectedName = offersEditPage.getNameTxt();
+			String expectedName = offersDeletePage.getNameTxt();
 			System.out.println("Extracted Text: " + expectedName);
 
-			Assert.assertTrue(expectedName.toLowerCase().contains("offer-2026"));
+			Assert.assertNotEquals(expectedName, "Item was deleted successfully");
 
-			
-			
+
 			
 		} catch (Exception e) {
 			// Logs the exception for debugging
-			e.printStackTrace(); 
-            Assert.fail("Test failed due to an exception: " + e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
 	}

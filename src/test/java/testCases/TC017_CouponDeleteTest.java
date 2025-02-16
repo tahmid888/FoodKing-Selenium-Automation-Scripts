@@ -12,7 +12,7 @@ import testBase.BaseClass;
 
 public class TC017_CouponDeleteTest extends BaseClass {
 	@Test()
-	public void deleteCoupons() throws InterruptedException {
+	public void deleteCoupons() {
 
 		try {
 

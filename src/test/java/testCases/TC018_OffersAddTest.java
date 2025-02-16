@@ -12,7 +12,7 @@ import testBase.BaseClass;
 public class TC018_OffersAddTest extends BaseClass{
 	
 	@Test()
-	public void addOffers() throws InterruptedException {
+	public void addOffers() {
 
 		
 		try {
@@ -30,7 +30,7 @@ public class TC018_OffersAddTest extends BaseClass{
 			homePage.clickDashboard();
 
 
-			// Offers Page
+			// Offers Add Page
 			OffersAddPage offersAddPage = new OffersAddPage(driver);
 			offersAddPage.clickOffers();
 			offersAddPage.addOffersBtn();

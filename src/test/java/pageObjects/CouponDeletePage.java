@@ -18,8 +18,6 @@ public class CouponDeletePage extends BasePage {
 
 	@FindBy(xpath = "//button[normalize-space()=\"Yes, Delete it!\"]")
 	WebElement btnDelete;
-	@FindBy(xpath = "//div[contains(normalize-space(), \"Auth-\")]")
-	WebElement getTxtName;
 
 	// Wait object for explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -38,7 +36,7 @@ public class CouponDeletePage extends BasePage {
 			if (nameCell.getText().equals(couponName)) {
 				couponFound = true;
 
-				// Click the "Edit" button in the same row
+				// Click the "Delete" button in the same row
 				WebElement deleteButton = row.findElement(By.xpath(".//td[7]//button[2]"));
 				deleteButton.click();
 				// Exit loop after finding and editing the coupon
@@ -60,8 +58,6 @@ public class CouponDeletePage extends BasePage {
 
 	public void deleteBtn() {
 		wait.until(ExpectedConditions.visibilityOf(btnDelete)).click();
-
-		
 	}
 
 }
