@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-16T22:45:11 GMT+06:00" name="Default suite" finished-at="2025-02-16T22:45:18 GMT+06:00" duration-ms="6884">
+  <suite started-at="2025-02-17T23:46:42 GMT+06:00" name="Default suite" finished-at="2025-02-17T23:46:49 GMT+06:00" duration-ms="7642">
     <groups>
     </groups>
-    <test started-at="2025-02-16T22:45:11 GMT+06:00" name="Default test" finished-at="2025-02-16T22:45:18 GMT+06:00" duration-ms="6884">
-      <class name="testCases.TC020_OffersDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC020_OffersDeleteTest@1aafa419]" started-at="2025-02-16T22:45:11 GMT+06:00" name="setup" finished-at="2025-02-16T22:45:15 GMT+06:00" duration-ms="4083" status="PASS">
+    <test started-at="2025-02-17T23:46:42 GMT+06:00" name="Default test" finished-at="2025-02-17T23:46:49 GMT+06:00" duration-ms="7642">
+      <class name="testCases.TC021_AdministratorsAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC021_AdministratorsAddTest@1aafa419]" started-at="2025-02-17T23:46:42 GMT+06:00" name="setup" finished-at="2025-02-17T23:46:46 GMT+06:00" duration-ms="4067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="offersDelete()[pri:0, instance:testCases.TC020_OffersDeleteTest@1aafa419]" started-at="2025-02-16T22:45:15 GMT+06:00" name="offersDelete" finished-at="2025-02-16T22:45:18 GMT+06:00" duration-ms="2620" status="PASS">
+        <test-method signature="administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@1aafa419]" started-at="2025-02-17T23:46:46 GMT+06:00" name="administratorsAdd" finished-at="2025-02-17T23:46:49 GMT+06:00" duration-ms="3393" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- offersDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC020_OffersDeleteTest@1aafa419]" started-at="2025-02-16T22:45:18 GMT+06:00" name="tearDown" finished-at="2025-02-16T22:45:18 GMT+06:00" duration-ms="153" status="PASS">
+        </test-method> <!-- administratorsAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC021_AdministratorsAddTest@1aafa419]" started-at="2025-02-17T23:46:49 GMT+06:00" name="tearDown" finished-at="2025-02-17T23:46:49 GMT+06:00" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC020_OffersDeleteTest -->
+      </class> <!-- testCases.TC021_AdministratorsAddTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
