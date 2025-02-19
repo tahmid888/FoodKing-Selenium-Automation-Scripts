@@ -46,13 +46,13 @@ public class TC021_AdministratorsAddTest extends BaseClass {
 			// Coupons Page
 			CouponsAddPage couponsPage = new CouponsAddPage(driver);
 			couponsPage.clickSaveBtn();
-			
 
 			// Assert
-			//String expectedName = offersDeletePage.getNameTxt();
-			// System.out.println("Extracted Text: " + expectedName);
+			String expectedName = usersPage.getNameTxt();
+			String originalItemName = "Elon Musk";
+			System.out.println("Extracted Text: " + expectedName);
 
-			// Assert.assertNotEquals(expectedName, "Item was deleted successfully");
+			Assert.assertEquals(expectedName, originalItemName, "Administrators wasn't found successfully");
 
 		} catch (Exception e) {
 			// Logs the exception for debugging

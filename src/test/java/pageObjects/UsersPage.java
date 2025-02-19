@@ -39,11 +39,11 @@ public class UsersPage extends BasePage {
 	WebElement radioAllBranch;
 
 
-	// Wait object for explicit waits
+	// Explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	
-	
+	// Administrators Add
 	public void clickAdministrator() {
 		wait.until(ExpectedConditions.elementToBeClickable(linkAdministrator)).click();
 	}
@@ -73,6 +73,16 @@ public class UsersPage extends BasePage {
 		//wait.until(ExpectedConditions.elementToBeClickable(addAdministratorBtn)).click();
 		radioAllBranch.click();
 	}
+	
+	public String getNameTxt() {
+		return wait.until(ExpectedConditions.presenceOfElementLocated
+				(By.xpath("//td[contains(normalize-space(), \"Elon Musk\")]")))
+				.getText();
+
+	}
+	
+	// Administrators Edit
+	
 	
 	
 	

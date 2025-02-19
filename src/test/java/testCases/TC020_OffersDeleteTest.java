@@ -45,12 +45,15 @@ public class TC020_OffersDeleteTest extends BaseClass {
 			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
 			couponDeletePage.deleteBtn();
 			
+			
 			// Assert
 			String expectedName = offersDeletePage.getNameTxt();
+			String originalItemName = "Offer-2026";
 			System.out.println("Extracted Text: " + expectedName);
 
-			Assert.assertNotEquals(expectedName, "Item was deleted successfully");
-
+			
+			Assert.assertEquals(expectedName, originalItemName,"Item was deleted successfully"); 
+			
 
 			
 		} catch (Exception e) {
