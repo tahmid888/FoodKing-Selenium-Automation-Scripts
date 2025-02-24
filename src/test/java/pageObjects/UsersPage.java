@@ -39,6 +39,11 @@ public class UsersPage extends BasePage {
 	@FindBy(xpath = "//input[@id='all_branch']")
 	WebElement radioAllBranch;
 
+	@FindBy(xpath = "(//span[normalize-space()='Delivery Boys'])[1]")
+	WebElement linkDeliveryBoys;
+	@FindBy(xpath = "//span[normalize-space()='Add Delivery Boy']")
+	WebElement addDeliveryBoyBtn;
+
 	// Explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -78,7 +83,6 @@ public class UsersPage extends BasePage {
 	}
 
 	public void allBranchBtn() {
-		// wait.until(ExpectedConditions.elementToBeClickable(addAdministratorBtn)).click();
 		radioAllBranch.click();
 	}
 
@@ -110,7 +114,7 @@ public class UsersPage extends BasePage {
 				WebElement editButton = row.findElement(By.xpath("//td/div[1]/button[1]"));
 
 				wait.until(ExpectedConditions.elementToBeClickable(editButton)).click();
-				
+
 				break;
 			}
 		}
@@ -119,6 +123,16 @@ public class UsersPage extends BasePage {
 			System.out.println("Administrators not found!");
 		}
 
+	}
+
+	// Delivery Boy Add
+
+	public void clickDeliveryBoy() {
+		wait.until(ExpectedConditions.elementToBeClickable(linkDeliveryBoys)).click();
+	}
+
+	public void clickaddDeliveryBoyBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(addDeliveryBoyBtn)).click();
 	}
 
 }
