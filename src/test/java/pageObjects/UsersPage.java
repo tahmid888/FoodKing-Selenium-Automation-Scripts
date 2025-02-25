@@ -44,6 +44,21 @@ public class UsersPage extends BasePage {
 	@FindBy(xpath = "//span[normalize-space()='Add Delivery Boy']")
 	WebElement addDeliveryBoyBtn;
 
+	@FindBy(xpath = "(//span[normalize-space()='Customers'])[1]")
+	WebElement linkCustomer;
+	@FindBy(xpath = "//span[normalize-space()='Add Customer']")
+	WebElement addCustomerBtn;
+
+	@FindBy(xpath = "(//span[normalize-space()='Employees'])[1]")
+	WebElement linkEmployee;
+	@FindBy(xpath = "//span[normalize-space()='Add Employee']")
+	WebElement addEmployeeBtn;
+	@FindBy(xpath = "(//*[@class='icon arrow-downward'])[1]")
+	WebElement addEmployeeDropDown;
+
+	@FindBy(xpath = "//span[text()='Stuff']")
+	WebElement addEmployeeDropDownSelect;
+
 	// Explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
@@ -133,6 +148,34 @@ public class UsersPage extends BasePage {
 
 	public void clickaddDeliveryBoyBtn() {
 		wait.until(ExpectedConditions.elementToBeClickable(addDeliveryBoyBtn)).click();
+	}
+
+	// Customer Add
+
+	public void clickCustomer() {
+		wait.until(ExpectedConditions.elementToBeClickable(linkCustomer)).click();
+	}
+
+	public void clickCustomerBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(addCustomerBtn)).click();
+	}
+
+	// Employee Add
+
+	public void clickEmployee() {
+		wait.until(ExpectedConditions.elementToBeClickable(linkEmployee)).click();
+	}
+
+	public void clickEmployeeBtn() {
+		wait.until(ExpectedConditions.elementToBeClickable(addEmployeeBtn)).click();
+	}
+	
+	public void clickEmployeeDropDown() {
+		wait.until(ExpectedConditions.elementToBeClickable(addEmployeeDropDown)).click();
+		//addEmployeeDropDown.click();
+	}
+	public void clickEmployeeSelect() {
+		addEmployeeDropDownSelect.click();
 	}
 
 }

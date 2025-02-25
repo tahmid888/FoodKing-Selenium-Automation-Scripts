@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-24T23:57:25 GMT+06:00" name="Default suite" finished-at="2025-02-24T23:57:38 GMT+06:00" duration-ms="13164">
+  <suite started-at="2025-02-25T23:20:54 GMT+06:00" name="Default suite" finished-at="2025-02-25T23:21:03 GMT+06:00" duration-ms="8835">
     <groups>
     </groups>
-    <test started-at="2025-02-24T23:57:25 GMT+06:00" name="Default test" finished-at="2025-02-24T23:57:38 GMT+06:00" duration-ms="13164">
-      <class name="testCases.TC025_DeliveryBoyEditTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1aafa419]" started-at="2025-02-24T23:57:25 GMT+06:00" name="setup" finished-at="2025-02-24T23:57:30 GMT+06:00" duration-ms="4922" status="PASS">
+    <test started-at="2025-02-25T23:20:54 GMT+06:00" name="Default test" finished-at="2025-02-25T23:21:03 GMT+06:00" duration-ms="8835">
+      <class name="testCases.TC030_EmployeeAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC030_EmployeeAddTest@1aafa419]" started-at="2025-02-25T23:20:54 GMT+06:00" name="setup" finished-at="2025-02-25T23:20:58 GMT+06:00" duration-ms="4567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1aafa419]" started-at="2025-02-24T23:57:30 GMT+06:00" name="deliveryBoyEdit" finished-at="2025-02-24T23:57:38 GMT+06:00" duration-ms="7982" status="PASS">
+        <test-method signature="employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1aafa419]" started-at="2025-02-25T23:20:58 GMT+06:00" name="employeeAdd" finished-at="2025-02-25T23:21:02 GMT+06:00" duration-ms="4071" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deliveryBoyEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1aafa419]" started-at="2025-02-24T23:57:38 GMT+06:00" name="tearDown" finished-at="2025-02-24T23:57:38 GMT+06:00" duration-ms="230" status="PASS">
+        </test-method> <!-- employeeAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC030_EmployeeAddTest@1aafa419]" started-at="2025-02-25T23:21:02 GMT+06:00" name="tearDown" finished-at="2025-02-25T23:21:03 GMT+06:00" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC025_DeliveryBoyEditTest -->
+      </class> <!-- testCases.TC030_EmployeeAddTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
