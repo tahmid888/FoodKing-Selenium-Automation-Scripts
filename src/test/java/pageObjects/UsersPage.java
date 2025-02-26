@@ -172,10 +172,42 @@ public class UsersPage extends BasePage {
 	
 	public void clickEmployeeDropDown() {
 		wait.until(ExpectedConditions.elementToBeClickable(addEmployeeDropDown)).click();
-		//addEmployeeDropDown.click();
+		
 	}
 	public void clickEmployeeSelect() {
 		addEmployeeDropDownSelect.click();
 	}
+	
+	
+	// Administrators/Delivery Boy/Customer/Employee Delete
+
+		public void chooseNameToDelete() {
+
+			String administratorsName = "Elon Musk";
+			boolean administratorsFound = false;
+
+			// Locate all rows in the table
+			List<WebElement> rows = driver.findElements(By.xpath("//tbody/tr"));
+
+			for (WebElement row : rows) {
+				// Find the name in each row
+				WebElement nameCell = row.findElement(By.xpath(".//td[1]")); // Adjust column index
+				if (nameCell.getText().equals(administratorsName)) {
+					administratorsFound = true;
+
+					// Click the "Delete" button in the same row
+					WebElement deleteButton = row.findElement(By.xpath("//td/div[1]/button[2]"));
+
+					wait.until(ExpectedConditions.elementToBeClickable(deleteButton)).click();
+
+					break;
+				}
+			}
+
+			if (!administratorsFound) {
+				System.out.println("Users not found!");
+			}
+
+		}
 
 }
