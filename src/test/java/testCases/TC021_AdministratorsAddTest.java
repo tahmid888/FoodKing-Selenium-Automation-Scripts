@@ -39,8 +39,8 @@ public class TC021_AdministratorsAddTest extends BaseClass {
 			usersPage.setEmail(p.getProperty("administratorsEmail"));
 			usersPage.setPhone(p.getProperty("administratorsPhone"));
 			usersPage.activeBtn();
-			usersPage.setPassword(p.getProperty("administratorsPassword"));
-			usersPage.setPasswordConfirmation(p.getProperty("administratorsConfirmPassword"));
+			usersPage.setPassword(p.getProperty("password"));
+			usersPage.setPasswordConfirmation(p.getProperty("confirmPassword"));
 			usersPage.allBranchBtn();
 
 			// Coupons Page

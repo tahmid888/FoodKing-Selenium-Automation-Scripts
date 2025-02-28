@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-27T00:33:42 GMT+06:00" name="Default suite" finished-at="2025-02-27T00:33:50 GMT+06:00" duration-ms="8372">
+  <suite started-at="2025-02-28T23:20:42 GMT+06:00" name="Default suite" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="7109">
     <groups>
     </groups>
-    <test started-at="2025-02-27T00:33:42 GMT+06:00" name="Default test" finished-at="2025-02-27T00:33:50 GMT+06:00" duration-ms="8372">
+    <test started-at="2025-02-28T23:20:42 GMT+06:00" name="Default test" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="7109">
       <class name="testCases.TC032_EmployeeDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-27T00:33:42 GMT+06:00" name="setup" finished-at="2025-02-27T00:33:47 GMT+06:00" duration-ms="5340" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:42 GMT+06:00" name="setup" finished-at="2025-02-28T23:20:46 GMT+06:00" duration-ms="4159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-27T00:33:47 GMT+06:00" name="employeeDelete" finished-at="2025-02-27T00:33:50 GMT+06:00" duration-ms="2826" status="PASS">
+        <test-method signature="employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:46 GMT+06:00" name="employeeDelete" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="2771" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- employeeDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-27T00:33:50 GMT+06:00" name="tearDown" finished-at="2025-02-27T00:33:50 GMT+06:00" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:49 GMT+06:00" name="tearDown" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
