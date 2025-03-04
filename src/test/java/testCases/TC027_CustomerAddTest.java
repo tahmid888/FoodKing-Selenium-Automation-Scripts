@@ -3,17 +3,19 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC027_CustomerAddTest extends BaseClass{
-	@Test()
+public class TC027_CustomerAddTest extends BaseClass {
+	
+	@Test(groups = { "Customer" })
 	public void customerAdd() {
-
+		
+		logger.info("***** Starting TC027_CustomerAddTest *****");
+		
 		try {
 
 			// Home Page
@@ -38,10 +40,9 @@ public class TC027_CustomerAddTest extends BaseClass{
 			usersPage.activeBtn();
 			usersPage.setPassword(p.getProperty("password"));
 			usersPage.setPasswordConfirmation(p.getProperty("confirmPassword"));
-			
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -50,8 +51,6 @@ public class TC027_CustomerAddTest extends BaseClass{
 			System.out.println("Extracted Text: " + expectedName);
 
 			Assert.assertEquals(expectedName, originalItemName, "Customers wasn't found successfully");
-			
-			
 
 		} catch (Exception e) {
 			// Logs the exception for debugging
@@ -59,6 +58,8 @@ public class TC027_CustomerAddTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+		
+		logger.info("***** Finished TC027_CustomerAddTest *****");
 	}
-	
+
 }

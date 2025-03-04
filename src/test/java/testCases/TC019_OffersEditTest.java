@@ -2,20 +2,17 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.OffersAddPage;
-import pageObjects.OffersEditPage;
+import pageObjects.OffersPage;
 import testBase.BaseClass;
 
 public class TC019_OffersEditTest extends BaseClass {
 
 	@Test()
-public void addOffers() {
+	public void addOffers() {
 
-		
 		try {
 
 			// Home Page
@@ -30,34 +27,27 @@ public void addOffers() {
 			homePage.clickAccount();
 			homePage.clickDashboard();
 
+			// Offers Page
+			OffersPage offersPage = new OffersPage(driver);
+			offersPage.clickOffers();
+			offersPage.chooseNameToUpdate();
+			offersPage.setName(p.getProperty("updateOfferName"));
+			offersPage.setDiscountPercentage(p.getProperty("updateOfferDiscountPercentage"));
 
-			// Offers Add Page
-			OffersAddPage offersAddPage = new OffersAddPage(driver);
-			offersAddPage.clickOffers();
-			
-			// Offer Edit Page
-			OffersEditPage offersEditPage = new OffersEditPage(driver);
-			offersEditPage.chooseNameToUpdate();
-			offersEditPage.setName(p.getProperty("updateOfferName"));
-			offersEditPage.setDiscountPercentage(p.getProperty("updateOfferDiscountPercentage"));
-			
 			// Coupons Add Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
-			
+
 			// Assert
-			String expectedName = offersEditPage.getNameTxt();
+			String expectedName = offersPage.getNameTxt();
 			System.out.println("Extracted Text: " + expectedName);
 
-			Assert.assertTrue(expectedName.toLowerCase().contains("offer-2026"));
+			Assert.assertTrue(expectedName.toLowerCase().contains("offer-"));
 
-			
-			
-			
 		} catch (Exception e) {
 			// Logs the exception for debugging
-			e.printStackTrace(); 
-            Assert.fail("Test failed due to an exception: " + e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
 	}

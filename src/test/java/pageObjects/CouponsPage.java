@@ -1,22 +1,16 @@
 package pageObjects;
-
-import java.io.File;
 import java.time.Duration;
-import java.time.Month;
-import java.util.HashMap;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CouponsAddPage extends BasePage {
+public class CouponsPage extends BasePage {
 
-	public CouponsAddPage(WebDriver driver) {
+	public CouponsPage(WebDriver driver) {
 		super(driver);
 	}
 
@@ -39,6 +33,7 @@ public class CouponsAddPage extends BasePage {
 	WebElement txtMaximumDiscount;
 	@FindBy(xpath = "//input[@id=\"limit_per_user\"]")
 	WebElement txtLimitUser;
+	
 
 	// Dates
 	// Only Click Start Date
@@ -50,28 +45,28 @@ public class CouponsAddPage extends BasePage {
 	WebElement selectEndDate;
 
 	// Only Start Date Select
-	@FindBy(xpath = "//div[contains(@class, 'dp__cell') and text()='15']")
+	@FindBy(xpath = "//div[contains(@class, 'dp__cell') and text()='1']")
 	WebElement selectSDate;
 
 	// Only End Date Select
-	@FindBy(xpath = "//div[contains(@class, 'dp__cell') and text()='25']")
+	@FindBy(xpath = "//div[contains(@class, 'dp__cell') and text()='15']")
 	WebElement selectEDate;
 
 	// Save button
 	@FindBy(xpath = "//span[normalize-space()=\"Save\"]")
 	WebElement btnSave;
 	
+	@FindBy(xpath = "//button[normalize-space()=\"Yes, Delete it!\"]")
+	WebElement btnDelete;
 
 	@FindBy(xpath = "//div[contains(normalize-space(), \"Auth-\")]")
 	WebElement getTxtName;
+
 	
 
-	//****************************************************************************//
-
-	// Wait object for explicit waits
+	// Explicit waits
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	
 	public void clickCoupon() {
 		wait.until(ExpectedConditions.elementToBeClickable(lnkCoupon)).click();
 	}
@@ -81,10 +76,12 @@ public class CouponsAddPage extends BasePage {
 	}
 
 	public void setName(String name) {
+		txtName.clear();
 		txtName.sendKeys(name);
 	}
 
 	public void setCode(String code) {
+		txtName.clear();
 		txtCode.sendKeys(code);
 	}
 
@@ -104,6 +101,7 @@ public class CouponsAddPage extends BasePage {
 		txtLimitUser.sendKeys(limitUser);
 	}
 
+	// To Upload Files
 	public void selectFileUpload() {
 
 		WebElement fileInput = wait.until(
@@ -116,8 +114,8 @@ public class CouponsAddPage extends BasePage {
 	}
 
 	public void setDescription(String description) {
-		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id=\"description\"]"))).sendKeys(description);
-		// txtDescription.sendKeys(description);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//textarea[@id=\"description\"]")))
+				.sendKeys(description);
 	}
 
 	// Dates
@@ -136,19 +134,81 @@ public class CouponsAddPage extends BasePage {
 	public void clickEDate() {
 		selectEDate.click();
 	}
-
 	
+	
+	public String getNameTxt() {
+		return wait.until(
+				ExpectedConditions.presenceOfElementLocated(By.xpath("//td[contains(normalize-space(), \"Auth-\")]")))
+				.getText();
+
+	}
+	
+	// Edit Coupon
+	public void chooseNameToUpdate() {
+
+		String couponName = "Auth-2025"; // Coupon to search for
+		boolean couponFound = false;
+
+		List<WebElement> rows = driver.findElements(By.xpath("//tbody/tr"));
+
+		for (WebElement row : rows) {
+			// Find the coupon name in each row
+			WebElement nameCell = row.findElement(By.xpath(".//td[1]")); // Adjust column index
+			if (nameCell.getText().equals(couponName)) {
+				couponFound = true;
+
+				// Click the "Edit" button in the same row
+				WebElement editButton = row.findElement(By.xpath(".//td[7]//button"));
+				editButton.click();
+			
+				break;
+			}
+		}
+
+		if (!couponFound) {
+			System.out.println("Coupon not found!");
+		}
+
+	}
+
 	// Save button
 	public void clickSaveBtn() {
 		wait.until(ExpectedConditions.elementToBeClickable(btnSave)).click();
 
 	}
+
 	
-	public String getNameTxt() {
-	return 	getTxtName.getText();
+	// Coupons Delete
+	public void chooseNameToDelete() {
+
+		String couponName = "Auth-2026"; // Coupon to search for
+		boolean couponFound = false;
+
+		// Locate all rows in the table
+		List<WebElement> rows = driver.findElements(By.xpath("//tbody/tr"));
+
+		for (WebElement row : rows) {
+			// Find the coupon name in each row
+			WebElement nameCell = row.findElement(By.xpath(".//td[1]")); // Adjust column index
+			if (nameCell.getText().equals(couponName)) {
+				couponFound = true;
+
+				// Click the "Delete" button in the same row
+				WebElement deleteButton = row.findElement(By.xpath(".//td[7]//button[2]"));
+				deleteButton.click();
+				// Exit loop after finding and editing the coupon
+				break;
+			}
+		}
+
+		if (!couponFound) {
+			System.out.println("Coupon not found!");
+		}
 
 	}
-
 	
+	public void deleteBtn() {
+		wait.until(ExpectedConditions.visibilityOf(btnDelete)).click();
+	}
 
 }

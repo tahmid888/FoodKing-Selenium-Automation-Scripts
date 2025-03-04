@@ -1,11 +1,7 @@
 package testCases;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pageObjects.CouponDeletePage;
-import pageObjects.CouponsAddPage;
-import pageObjects.CouponsEditPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import testBase.BaseClass;
@@ -28,19 +24,15 @@ public class TC017_CouponDeleteTest extends BaseClass {
 			homePage.clickAccount();
 			homePage.clickDashboard();
 
-			// Coupons Add Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			// Coupons Page
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickCoupon();
+			couponsPage.chooseNameToDelete();
+			couponsPage.deleteBtn();
 
-			// Coupons Delete Page
-			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
-			couponDeletePage.chooseNameToDelete();
-			couponDeletePage.deleteBtn();
-			
 			// Assert
-			String expectedName = couponDeletePage.getNameTxt();
+			String expectedName = couponsPage.getNameTxt();
 			Assert.assertTrue(expectedName.toLowerCase().contains("auth-2026"));
-
 
 		} catch (Exception e) {
 			// Logs the exception for debugging

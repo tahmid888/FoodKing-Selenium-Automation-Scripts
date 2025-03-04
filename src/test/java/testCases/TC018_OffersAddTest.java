@@ -3,18 +3,17 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.OffersAddPage;
+import pageObjects.OffersPage;
 import testBase.BaseClass;
 
-public class TC018_OffersAddTest extends BaseClass{
-	
+public class TC018_OffersAddTest extends BaseClass {
+
 	@Test()
 	public void addOffers() {
 
-		
 		try {
 
 			// Home Page
@@ -29,9 +28,8 @@ public class TC018_OffersAddTest extends BaseClass{
 			homePage.clickAccount();
 			homePage.clickDashboard();
 
-
 			// Offers Add Page
-			OffersAddPage offersAddPage = new OffersAddPage(driver);
+			OffersPage offersAddPage = new OffersPage(driver);
 			offersAddPage.clickOffers();
 			offersAddPage.addOffersBtn();
 			offersAddPage.setName(p.getProperty("offerName"));
@@ -41,23 +39,19 @@ public class TC018_OffersAddTest extends BaseClass{
 			offersAddPage.clickEndDate();
 			offersAddPage.clickEDate();
 			offersAddPage.selectFileUpload();
-			
+
 			// Coupons Add Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
-			
-			
+
 			// Assert
 			String expectedName = offersAddPage.getNameTxt();
 			Assert.assertTrue(expectedName.toLowerCase().contains("offer-2025"));
 
-			
-			
-			
 		} catch (Exception e) {
 			// Logs the exception for debugging
-			e.printStackTrace(); 
-            Assert.fail("Test failed due to an exception: " + e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
 	}

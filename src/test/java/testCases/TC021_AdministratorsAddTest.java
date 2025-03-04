@@ -1,21 +1,20 @@
 package testCases;
-
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
-
-import pageObjects.CouponDeletePage;
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.OffersAddPage;
-import pageObjects.OffersDeletePage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
 public class TC021_AdministratorsAddTest extends BaseClass {
-
-	@Test()
+	
+	@Test(groups= {"Admin"})
 	public void administratorsAdd() {
+		
+		logger.info("***** Starting TC021_AdministratorsAddTest *****");
+		
 
 		try {
 
@@ -44,7 +43,7 @@ public class TC021_AdministratorsAddTest extends BaseClass {
 			usersPage.allBranchBtn();
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -57,9 +56,12 @@ public class TC021_AdministratorsAddTest extends BaseClass {
 		} catch (Exception e) {
 			// Logs the exception for debugging
 			e.printStackTrace();
+			//logger.error("Test failed due to an exception: " + e.getMessage(), e);
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+		
+		logger.info("***** Finished TC021_AdministratorsAddTest *****");
 	}
 
 }

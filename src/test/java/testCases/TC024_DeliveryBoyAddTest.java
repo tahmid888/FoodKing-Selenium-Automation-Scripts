@@ -2,17 +2,18 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC024_DeliveryBoyAddTest extends BaseClass{
+public class TC024_DeliveryBoyAddTest extends BaseClass {
 
-	@Test()
+	@Test(groups = { "DeliveryBoy" })
 	public void deliveryBoyAdd() {
+
+		logger.info("***** Starting TC024_DeliveryBoyAddTest *****");
 
 		try {
 
@@ -41,9 +42,9 @@ public class TC024_DeliveryBoyAddTest extends BaseClass{
 			usersPage.allBranchBtn();
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
-	
+
 			// Assert
 			String expectedName = usersPage.getNameTxt();
 			String originalItemName = "Elon Musk";
@@ -57,6 +58,8 @@ public class TC024_DeliveryBoyAddTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+
+		logger.info("***** Finished TC024_DeliveryBoyAddTest *****");
 	}
 
 }

@@ -3,17 +3,19 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC025_DeliveryBoyEditTest extends BaseClass{
+public class TC025_DeliveryBoyEditTest extends BaseClass {
 
-	@Test()
+	@Test(groups = { "DeliveryBoy" }, dependsOnMethods = { "testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd" })
 	public void deliveryBoyEdit() {
-
+		
+		logger.info("***** Starting TC025_DeliveryBoyEditTest *****");
+		
 		try {
 
 			// Home Page
@@ -36,7 +38,7 @@ public class TC025_DeliveryBoyEditTest extends BaseClass{
 			Thread.sleep(5000);
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -52,6 +54,8 @@ public class TC025_DeliveryBoyEditTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+
+		logger.info("***** Finished TC025_DeliveryBoyEditTest *****");
 	}
-	
+
 }

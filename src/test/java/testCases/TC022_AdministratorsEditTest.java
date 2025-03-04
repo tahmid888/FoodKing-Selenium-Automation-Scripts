@@ -2,17 +2,18 @@ package testCases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC022_AdministratorsEditTest extends BaseClass{
+public class TC022_AdministratorsEditTest extends BaseClass {
 
-	@Test()
-	public void administratorsedit() {
+	@Test(groups = { "Admin" }, dependsOnMethods = { "testCases.TC021_AdministratorsAddTest.administratorsAdd" })
+	public void administratorsEdit() {
+
+		logger.info("***** Starting TC022_AdministratorsEditTest *****");
 
 		try {
 
@@ -35,7 +36,7 @@ public class TC022_AdministratorsEditTest extends BaseClass{
 			usersPage.setName(p.getProperty("updateAdministratorsName"));
 			Thread.sleep(5000);
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -51,6 +52,8 @@ public class TC022_AdministratorsEditTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+
+		logger.info("***** Finished TC022_AdministratorsEditTest *****");
 	}
 
 }

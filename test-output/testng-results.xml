@@ -1,25 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-28T23:20:42 GMT+06:00" name="Default suite" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="7109">
+  <suite started-at="2025-03-05T00:05:10 GMT+06:00" name="Admin XML Suite" finished-at="2025-03-05T00:05:40 GMT+06:00" duration-ms="29359">
     <groups>
+      <group name="Customer">
+        <method signature="TC027_CustomerAddTest.customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@175c2241]" name="customerAdd" class="testCases.TC027_CustomerAddTest"/>
+        <method signature="TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@5bf0d49]" name="customerEdit" class="testCases.TC028_CustomerEditTest"/>
+        <method signature="TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b7a5baa]" name="customerDelete" class="testCases.TC029_CustomerDeleteTest"/>
+      </group> <!-- Customer -->
     </groups>
-    <test started-at="2025-02-28T23:20:42 GMT+06:00" name="Default test" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="7109">
-      <class name="testCases.TC032_EmployeeDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:42 GMT+06:00" name="setup" finished-at="2025-02-28T23:20:46 GMT+06:00" duration-ms="4159" status="PASS">
+    <test started-at="2025-03-05T00:05:10 GMT+06:00" name="Test" finished-at="2025-03-05T00:05:40 GMT+06:00" duration-ms="29359">
+      <class name="testCases.TC027_CustomerAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC027_CustomerAddTest@175c2241]" started-at="2025-03-05T00:05:10 GMT+06:00" name="setup" finished-at="2025-03-05T00:05:18 GMT+06:00" duration-ms="7768" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:46 GMT+06:00" name="employeeDelete" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="2771" status="PASS">
+        <test-method signature="customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@175c2241]" started-at="2025-03-05T00:05:18 GMT+06:00" name="customerAdd" finished-at="2025-03-05T00:05:22 GMT+06:00" duration-ms="3631" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- employeeDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@1aafa419]" started-at="2025-02-28T23:20:49 GMT+06:00" name="tearDown" finished-at="2025-02-28T23:20:49 GMT+06:00" duration-ms="150" status="PASS">
+        </test-method> <!-- customerAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC027_CustomerAddTest@175c2241]" started-at="2025-03-05T00:05:22 GMT+06:00" name="tearDown" finished-at="2025-03-05T00:05:22 GMT+06:00" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC032_EmployeeDeleteTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.TC027_CustomerAddTest -->
+      <class name="testCases.TC029_CustomerDeleteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b7a5baa]" started-at="2025-03-05T00:05:34 GMT+06:00" name="setup" finished-at="2025-03-05T00:05:36 GMT+06:00" duration-ms="1998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b7a5baa]" started-at="2025-03-05T00:05:36 GMT+06:00" name="customerDelete" finished-at="2025-03-05T00:05:40 GMT+06:00" depends-on-methods="testCases.TC028_CustomerEditTest.customerEdit" duration-ms="3697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b7a5baa]" started-at="2025-03-05T00:05:40 GMT+06:00" name="tearDown" finished-at="2025-03-05T00:05:40 GMT+06:00" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC029_CustomerDeleteTest -->
+      <class name="testCases.TC028_CustomerEditTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC028_CustomerEditTest@5bf0d49]" started-at="2025-03-05T00:05:22 GMT+06:00" name="setup" finished-at="2025-03-05T00:05:26 GMT+06:00" duration-ms="3673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@5bf0d49]" started-at="2025-03-05T00:05:26 GMT+06:00" name="customerEdit" finished-at="2025-03-05T00:05:34 GMT+06:00" depends-on-methods="testCases.TC027_CustomerAddTest.customerAdd" duration-ms="8106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerEdit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC028_CustomerEditTest@5bf0d49]" started-at="2025-03-05T00:05:34 GMT+06:00" name="tearDown" finished-at="2025-03-05T00:05:34 GMT+06:00" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC028_CustomerEditTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Admin XML Suite -->
 </testng-results>

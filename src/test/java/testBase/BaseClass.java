@@ -24,34 +24,28 @@ public class BaseClass {
 	public static WebDriver driver;
 	public Logger logger;
 	public Properties p;
-	
-	@BeforeClass()
-	
+
+	@BeforeClass(groups= {"Admin","DeliveryBoy","Customer"})
+
 	public void setup() throws IOException {
-		
-	// Loading config.properties file
-	FileReader file = new FileReader("./src//test//resources//config.properties");
-	p = new Properties();
-	p.load(file);
-	
-	
-	//logger = LogManager.getLogger(this.getClass()); //For showing log4j2.xml
-	
-	
-		
-	driver  = new ChromeDriver();
-	//driver.manage().deleteAllCookies();
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	driver.get(p.getProperty("Url")); // Reading URL from properties file
-	driver.manage().window().maximize();
-	
+
+		// Loading config.properties file
+		FileReader file = new FileReader("./src//test//resources//config.properties");
+		p = new Properties();
+		p.load(file);
+
+		logger = LogManager.getLogger(this.getClass()); // For showing log4j2.xml
+
+		driver = new ChromeDriver();
+		// driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get(p.getProperty("Url")); // Reading URL from properties file
+		driver.manage().window().maximize();
+
 	}
-	
-	
-	@AfterClass()
+
+	@AfterClass(groups= {"Admin","DeliveryBoy","Customer"})
 	public void tearDown() {
 		driver.quit();
 	}
 }
-		
-		

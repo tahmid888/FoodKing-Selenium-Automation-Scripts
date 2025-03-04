@@ -3,16 +3,18 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponDeletePage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC026_DeliveryBoyDeleteTest extends BaseClass{
-	
-	@Test()
+public class TC026_DeliveryBoyDeleteTest extends BaseClass {
+
+	@Test(groups = { "DeliveryBoy" }, dependsOnMethods = { "testCases.TC025_DeliveryBoyEditTest.deliveryBoyEdit" })
 	public void deliveryBoyDelete() {
+
+		logger.info("***** Starting TC026_DeliveryBoyDeleteTest *****");
 
 		try {
 
@@ -34,9 +36,8 @@ public class TC026_DeliveryBoyDeleteTest extends BaseClass{
 			usersPage.chooseNameToDelete();
 
 			// Coupons Delete Page
-			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
-			couponDeletePage.deleteBtn();
-
+			CouponsPage couponsPage = new CouponsPage(driver);
+			couponsPage.deleteBtn();
 
 			// Perform delete action here before assertion
 
@@ -53,6 +54,8 @@ public class TC026_DeliveryBoyDeleteTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+
+		logger.info("***** Finished TC026_DeliveryBoyDeleteTest *****");
 	}
 
 }

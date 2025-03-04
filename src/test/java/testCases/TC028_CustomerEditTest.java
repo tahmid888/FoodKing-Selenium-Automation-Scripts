@@ -3,7 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
@@ -11,8 +11,10 @@ import testBase.BaseClass;
 
 public class TC028_CustomerEditTest extends BaseClass{
 
-	@Test()
+	@Test(groups = { "Customer" }, dependsOnMethods = { "testCases.TC027_CustomerAddTest.customerAdd" })
 	public void customerEdit() {
+		
+		logger.info("***** Starting TC028_CustomerEditTest *****");
 
 		try {
 
@@ -36,7 +38,7 @@ public class TC028_CustomerEditTest extends BaseClass{
 			Thread.sleep(5000);
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -52,5 +54,7 @@ public class TC028_CustomerEditTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+		
+		logger.info("***** Finished TC028_CustomerEditTest *****");
 	}
 }
