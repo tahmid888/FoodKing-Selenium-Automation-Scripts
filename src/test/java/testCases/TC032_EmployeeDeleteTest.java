@@ -3,16 +3,18 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponDeletePage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
 import testBase.BaseClass;
 
-public class TC032_EmployeeDeleteTest extends BaseClass{
+public class TC032_EmployeeDeleteTest extends BaseClass {
 
-	@Test()
+	@Test(groups = {"Master", "Employee" }, dependsOnMethods = { "testCases.TC031_EmployeeEditTest.employeeEdit" })
 	public void employeeDelete() {
+
+		logger.info("***** Starting TC032_EmployeeDeleteTest *****");
 
 		try {
 
@@ -33,21 +35,12 @@ public class TC032_EmployeeDeleteTest extends BaseClass{
 			usersPage.clickEmployee();
 			usersPage.chooseNameToDelete();
 
-			// Coupons Delete Page
-			CouponDeletePage couponDeletePage = new CouponDeletePage(driver);
-			couponDeletePage.deleteBtn();
+			// Coupons Page
+			CouponsPage couponsPage = new CouponsPage(driver);
+			couponsPage.deleteBtn();
 
 			// Assert
-			// String expectedName = usersPage.getNameTxt();
-			// String originalItemName = "Jensen";
-			// System.out.println("Extracted Text: " + expectedName);
-
-			// Assert.assertNotEquals(expectedName, originalItemName, "Administrators found
-			// successfully");
-
-			// Perform delete action here before assertion
-
-			String deletedUserName = usersPage.getNameTxt(); // Method should return null or empty if user is deleted
+			String deletedUserName = usersPage.getNameTxt();
 
 			System.out.println("Extracted Text After Deletion: " + deletedUserName);
 
@@ -60,6 +53,8 @@ public class TC032_EmployeeDeleteTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+
+		logger.info("***** Finished TC032_EmployeeDeleteTest *****");
 	}
 
 }

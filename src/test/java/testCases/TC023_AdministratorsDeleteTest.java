@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC023_AdministratorsDeleteTest extends BaseClass {
 
-	@Test(groups= {"Admin"}, dependsOnMethods= {"testCases.TC022_AdministratorsEditTest.administratorsEdit"})
+	@Test(groups= {"Master","Admin"}, dependsOnMethods= {"testCases.TC022_AdministratorsEditTest.administratorsEdit"})
 	public void administratorsDelete() {
 		
 		logger.info("***** Starting TC023_AdministratorsDeleteTest *****");

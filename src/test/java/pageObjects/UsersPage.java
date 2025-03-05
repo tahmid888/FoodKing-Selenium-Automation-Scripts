@@ -135,7 +135,7 @@ public class UsersPage extends BasePage {
 		}
 
 		if (!administratorsFound) {
-			System.out.println("Administrators not found!");
+			System.out.println("Users not found!");
 		}
 
 	}

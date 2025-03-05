@@ -11,7 +11,7 @@ import testBase.BaseClass;
 
 public class TC025_DeliveryBoyEditTest extends BaseClass {
 
-	@Test(groups = { "DeliveryBoy" }, dependsOnMethods = { "testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd" })
+	@Test(groups = { "Master","DeliveryBoy" }, dependsOnMethods = { "testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd" })
 	public void deliveryBoyEdit() {
 		
 		logger.info("***** Starting TC025_DeliveryBoyEditTest *****");

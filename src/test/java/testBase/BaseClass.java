@@ -25,7 +25,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties p;
 
-	@BeforeClass(groups= {"Admin","DeliveryBoy","Customer"})
+	@BeforeClass(groups= {"Master","Admin","DeliveryBoy","Customer","Employee"})
 
 	public void setup() throws IOException {
 
@@ -44,7 +44,7 @@ public class BaseClass {
 
 	}
 
-	@AfterClass(groups= {"Admin","DeliveryBoy","Customer"})
+	@AfterClass(groups= {"Master","Admin","DeliveryBoy","Customer","Employee"})
 	public void tearDown() {
 		driver.quit();
 	}

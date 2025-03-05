@@ -3,7 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
@@ -11,8 +11,10 @@ import testBase.BaseClass;
 
 public class TC030_EmployeeAddTest extends BaseClass{
 
-	@Test()
+	@Test(groups = {"Master", "Employee" })
 	public void employeeAdd() {
+		
+		logger.info("***** Starting TC030_EmployeeAddTest *****");
 
 		try {
 
@@ -43,7 +45,7 @@ public class TC030_EmployeeAddTest extends BaseClass{
 			usersPage.clickEmployeeSelect();
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -59,5 +61,7 @@ public class TC030_EmployeeAddTest extends BaseClass{
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+		
+		logger.info("***** Finished TC030_EmployeeAddTest *****");
 	}
 }

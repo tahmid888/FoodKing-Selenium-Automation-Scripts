@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC021_AdministratorsAddTest extends BaseClass {
 	
-	@Test(groups= {"Admin"})
+	@Test(groups= {"Master","Admin" })
 	public void administratorsAdd() {
 		
 		logger.info("***** Starting TC021_AdministratorsAddTest *****");

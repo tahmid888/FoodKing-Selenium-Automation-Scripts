@@ -10,7 +10,7 @@ import testBase.BaseClass;
 
 public class TC024_DeliveryBoyAddTest extends BaseClass {
 
-	@Test(groups = { "DeliveryBoy" })
+	@Test(groups = {"Master", "DeliveryBoy" })
 	public void deliveryBoyAdd() {
 
 		logger.info("***** Starting TC024_DeliveryBoyAddTest *****");

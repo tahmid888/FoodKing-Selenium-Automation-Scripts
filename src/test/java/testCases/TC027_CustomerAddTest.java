@@ -11,7 +11,7 @@ import testBase.BaseClass;
 
 public class TC027_CustomerAddTest extends BaseClass {
 	
-	@Test(groups = { "Customer" })
+	@Test(groups = {"Master", "Customer" })
 	public void customerAdd() {
 		
 		logger.info("***** Starting TC027_CustomerAddTest *****");

@@ -3,7 +3,7 @@ package testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import pageObjects.CouponsAddPage;
+import pageObjects.CouponsPage;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.UsersPage;
@@ -11,8 +11,10 @@ import testBase.BaseClass;
 
 public class TC031_EmployeeEditTest extends BaseClass {
 
-	@Test()
+	@Test(groups = {"Master", "Employee" }, dependsOnMethods = { "testCases.TC030_EmployeeAddTest.employeeAdd" })
 	public void employeeEdit() {
+
+		logger.info("***** Starting TC031_EmployeeEditTest *****");
 
 		try {
 
@@ -30,13 +32,13 @@ public class TC031_EmployeeEditTest extends BaseClass {
 
 			// UsersPage Page
 			UsersPage usersPage = new UsersPage(driver);
-			usersPage.clickCustomer();
+			usersPage.clickEmployee();
 			usersPage.chooseNameToEdit();
 			usersPage.setName(p.getProperty("updateEmployeeName"));
 			Thread.sleep(5000);
 
 			// Coupons Page
-			CouponsAddPage couponsPage = new CouponsAddPage(driver);
+			CouponsPage couponsPage = new CouponsPage(driver);
 			couponsPage.clickSaveBtn();
 
 			// Assert
@@ -44,7 +46,7 @@ public class TC031_EmployeeEditTest extends BaseClass {
 			String originalItemName = "Elon Musk";
 			System.out.println("Extracted Text: " + expectedName);
 
-			Assert.assertEquals(expectedName, originalItemName, "Customer wasn't found successfully");
+			Assert.assertEquals(expectedName, originalItemName, "Employee wasn't found successfully");
 
 		} catch (Exception e) {
 			// Logs the exception for debugging
@@ -52,5 +54,6 @@ public class TC031_EmployeeEditTest extends BaseClass {
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 
 		}
+		logger.info("***** Finished TC031_EmployeeEditTest *****");
 	}
 }
