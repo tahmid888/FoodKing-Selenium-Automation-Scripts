@@ -8,62 +8,6 @@
       </run>
     </groups>
     <classes>
-      <class name="testCases.TC027_CustomerAddTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="customerAdd"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC027_CustomerAddTest -->
-      <class name="testCases.TC026_DeliveryBoyDeleteTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="deliveryBoyDelete"/>
-        </methods>
-      </class> <!-- testCases.TC026_DeliveryBoyDeleteTest -->
-      <class name="testCases.TC023_AdministratorsDeleteTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="administratorsDelete"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC023_AdministratorsDeleteTest -->
-      <class name="testCases.TC028_CustomerEditTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="customerEdit"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC028_CustomerEditTest -->
-      <class name="testCases.TC031_EmployeeEditTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="employeeEdit"/>
-        </methods>
-      </class> <!-- testCases.TC031_EmployeeEditTest -->
-      <class name="testCases.TC029_CustomerDeleteTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="customerDelete"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC029_CustomerDeleteTest -->
-      <class name="testCases.TC022_AdministratorsEditTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="administratorsEdit"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC022_AdministratorsEditTest -->
-      <class name="testCases.TC025_DeliveryBoyEditTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="deliveryBoyEdit"/>
-        </methods>
-      </class> <!-- testCases.TC025_DeliveryBoyEditTest -->
       <class name="testCases.TC032_EmployeeDeleteTest">
         <methods>
           <include name="tearDown"/>
@@ -71,13 +15,34 @@
           <include name="employeeDelete"/>
         </methods>
       </class> <!-- testCases.TC032_EmployeeDeleteTest -->
-      <class name="testCases.TC030_EmployeeAddTest">
+      <class name="testCases.TC029_CustomerDeleteTest">
         <methods>
           <include name="tearDown"/>
-          <include name="employeeAdd"/>
+          <include name="customerDelete"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC030_EmployeeAddTest -->
+      </class> <!-- testCases.TC029_CustomerDeleteTest -->
+      <class name="testCases.TC026_DeliveryBoyDeleteTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="deliveryBoyDelete"/>
+        </methods>
+      </class> <!-- testCases.TC026_DeliveryBoyDeleteTest -->
+      <class name="testCases.TC028_CustomerEditTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerEdit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC028_CustomerEditTest -->
+      <class name="testCases.TC022_AdministratorsEditTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="administratorsEdit"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC022_AdministratorsEditTest -->
       <class name="testCases.TC021_AdministratorsAddTest">
         <methods>
           <include name="tearDown"/>
@@ -85,6 +50,20 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC021_AdministratorsAddTest -->
+      <class name="testCases.TC025_DeliveryBoyEditTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="deliveryBoyEdit"/>
+        </methods>
+      </class> <!-- testCases.TC025_DeliveryBoyEditTest -->
+      <class name="testCases.TC023_AdministratorsDeleteTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="administratorsDelete"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC023_AdministratorsDeleteTest -->
       <class name="testCases.TC024_DeliveryBoyAddTest">
         <methods>
           <include name="deliveryBoyAdd"/>
@@ -92,6 +71,27 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC024_DeliveryBoyAddTest -->
+      <class name="testCases.TC031_EmployeeEditTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="employeeEdit"/>
+        </methods>
+      </class> <!-- testCases.TC031_EmployeeEditTest -->
+      <class name="testCases.TC030_EmployeeAddTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="employeeAdd"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC030_EmployeeAddTest -->
+      <class name="testCases.TC027_CustomerAddTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="customerAdd"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testCases.TC027_CustomerAddTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Grouping XML Suite] -->

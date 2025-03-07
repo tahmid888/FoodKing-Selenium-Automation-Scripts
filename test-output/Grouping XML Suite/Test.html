@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/4/8</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 06 01:39:07 GMT+06:00 2025</td>
+<td>Started on:</td><td>Fri Mar 07 23:05:44 GMT+06:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>86 seconds (86118 ms)</td>
+<tr><td>Total time:</td><td>515 seconds (515233 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>Master </td>
 </tr><tr>
@@ -67,73 +67,445 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()'><b>deliveryBoyDelete</b><br>Test class: testCases.TC026_DeliveryBoyDeleteTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec</td></tr>
-<tr>
-<td title='testCases.TC032_EmployeeDeleteTest.employeeDelete()'><b>employeeDelete</b><br>Test class: testCases.TC032_EmployeeDeleteTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC032_EmployeeDeleteTest@c730b35</td></tr>
+<td title='testCases.TC021_AdministratorsAddTest.administratorsAdd()'><b>administratorsAdd</b><br>Test class: testCases.TC021_AdministratorsAddTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), &quot;Elon Musk&quot;)] (tried for 10 second(s) with 500 milliseconds interval)
+	at testCases.TC021_AdministratorsAddTest.administratorsAdd(TC021_AdministratorsAddTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1420599919", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1420599919'><pre>java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), &quot;Elon Musk&quot;)] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.testng.Assert.fail(Assert.java:99)
+	at testCases.TC021_AdministratorsAddTest.administratorsAdd(TC021_AdministratorsAddTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>14</td>
+<td>testCases.TC021_AdministratorsAddTest@22ff4249</td></tr>
 <tr>
 <td title='testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd()'><b>deliveryBoyAdd</b><br>Test class: testCases.TC024_DeliveryBoyAddTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.TC024_DeliveryBoyAddTest@776aec5c</td></tr>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 806). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7da8b325a4cbf3ce703710a06fa282a, clickElement {id=f.90211E9AC2512E0DE6030F3A89B2A9C1.d.281E0B8FEA06E3FEC984491F137276FB.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57869/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a7da8b325a4cbf3ce703710a06fa282a)] -&gt; xpath: (//span[normalize-space()=&apos;Delivery Boys&apos;])[1]]
+Session ID: a7da8b325a4cbf3ce703710a06fa282a
+	at testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd(TC024_DeliveryBoyAddTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947043383", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947043383'><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 806). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a7da8b325a4cbf3ce703710a06fa282a, clickElement {id=f.90211E9AC2512E0DE6030F3A89B2A9C1.d.281E0B8FEA06E3FEC984491F137276FB.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57869/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a7da8b325a4cbf3ce703710a06fa282a)] -&gt; xpath: (//span[normalize-space()=&apos;Delivery Boys&apos;])[1]]
+Session ID: a7da8b325a4cbf3ce703710a06fa282a
+	at org.testng.Assert.fail(Assert.java:99)
+	at testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd(TC024_DeliveryBoyAddTest.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC024_DeliveryBoyAddTest@44c03695</td></tr>
 <tr>
 <td title='testCases.TC027_CustomerAddTest.customerAdd()'><b>customerAdd</b><br>Test class: testCases.TC027_CustomerAddTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.TC027_CustomerAddTest@75d4a5c2</td></tr>
-<tr>
-<td title='testCases.TC023_AdministratorsDeleteTest.administratorsDelete()'><b>administratorsDelete</b><br>Test class: testCases.TC023_AdministratorsDeleteTest</td>
-<td></td>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 850). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e712c8728b66b3b3085d3d4c6c61d36, clickElement {id=f.74E0BAAC05FF45B6DB7C2F6E84CF41B7.d.D55C596C60230E7043097B7C0B0B0553.e.169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58333/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0e712c8728b66b3b3085d3d4c6c61d36)] -&gt; xpath: (//span[normalize-space()=&apos;Customers&apos;])[1]]
+Session ID: 0e712c8728b66b3b3085d3d4c6c61d36
+	at testCases.TC027_CustomerAddTest.customerAdd(TC027_CustomerAddTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269257589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace269257589'><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 850). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0e712c8728b66b3b3085d3d4c6c61d36, clickElement {id=f.74E0BAAC05FF45B6DB7C2F6E84CF41B7.d.D55C596C60230E7043097B7C0B0B0553.e.169}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58333}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58333/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (0e712c8728b66b3b3085d3d4c6c61d36)] -&gt; xpath: (//span[normalize-space()=&apos;Customers&apos;])[1]]
+Session ID: 0e712c8728b66b3b3085d3d4c6c61d36
+	at org.testng.Assert.fail(Assert.java:99)
+	at testCases.TC027_CustomerAddTest.customerAdd(TC027_CustomerAddTest.java:58)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>2</td>
-<td>testCases.TC023_AdministratorsDeleteTest@5b7a5baa</td></tr>
-<tr>
-<td title='testCases.TC021_AdministratorsAddTest.administratorsAdd()'><b>administratorsAdd</b><br>Test class: testCases.TC021_AdministratorsAddTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.TC021_AdministratorsAddTest@51399530</td></tr>
+<td>testCases.TC027_CustomerAddTest@6a78afa0</td></tr>
 <tr>
 <td title='testCases.TC030_EmployeeAddTest.employeeAdd()'><b>employeeAdd</b><br>Test class: testCases.TC030_EmployeeAddTest</td>
-<td></td>
-<td>3</td>
-<td>testCases.TC030_EmployeeAddTest@6c6cb480</td></tr>
-<tr>
-<td title='testCases.TC028_CustomerEditTest.customerEdit()'><b>customerEdit</b><br>Test class: testCases.TC028_CustomerEditTest</td>
-<td></td>
-<td>7</td>
-<td>testCases.TC028_CustomerEditTest@557caf28</td></tr>
-<tr>
-<td title='testCases.TC025_DeliveryBoyEditTest.deliveryBoyEdit()'><b>deliveryBoyEdit</b><br>Test class: testCases.TC025_DeliveryBoyEditTest</td>
-<td></td>
-<td>7</td>
-<td>testCases.TC025_DeliveryBoyEditTest@1d296da</td></tr>
-<tr>
-<td title='testCases.TC031_EmployeeEditTest.employeeEdit()'><b>employeeEdit</b><br>Test class: testCases.TC031_EmployeeEditTest</td>
-<td></td>
-<td>7</td>
-<td>testCases.TC031_EmployeeEditTest@3c46e67a</td></tr>
+<td><div><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 887). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [076c911f5035da5870444a89b9321b01, clickElement {id=f.1604895A7E9EB29444AAD2FEFA61500A.d.B7FA55BB75ABBD84A7D0675EEEC03EB7.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58811}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58811/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (076c911f5035da5870444a89b9321b01)] -&gt; xpath: (//span[normalize-space()=&apos;Employees&apos;])[1]]
+Session ID: 076c911f5035da5870444a89b9321b01
+	at testCases.TC030_EmployeeAddTest.employeeAdd(TC030_EmployeeAddTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1408073939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1408073939'><pre>java.lang.AssertionError: Test failed due to an exception: element click intercepted: Element &lt;span class=&quot;text-base flex-auto&quot;&gt;...&lt;/span&gt; is not clickable at point (143, 887). Other element would receive the click: &lt;div data-v-2964abc9=&quot;&quot; class=&quot;velmld-full-screen velmld-overlay&quot; style=&quot;background-color: rgba(255, 255, 255, 0.9);&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=134.0.6998.36)
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [076c911f5035da5870444a89b9321b01, clickElement {id=f.1604895A7E9EB29444AAD2FEFA61500A.d.B7FA55BB75ABBD84A7D0675EEEC03EB7.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58811}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58811/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (076c911f5035da5870444a89b9321b01)] -&gt; xpath: (//span[normalize-space()=&apos;Employees&apos;])[1]]
+Session ID: 076c911f5035da5870444a89b9321b01
+	at org.testng.Assert.fail(Assert.java:99)
+	at testCases.TC030_EmployeeAddTest.employeeAdd(TC030_EmployeeAddTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>testCases.TC030_EmployeeAddTest@10683d9d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='testCases.TC022_AdministratorsEditTest.administratorsEdit()'><b>administratorsEdit</b><br>Test class: testCases.TC022_AdministratorsEditTest</td>
-<td></td>
-<td>7</td>
-<td>testCases.TC022_AdministratorsEditTest@5bf0d49</td></tr>
+<td><div><pre>java.lang.Throwable: Method TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@1573f9fc] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1850301256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1850301256'><pre>java.lang.Throwable: Method TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@1573f9fc] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC022_AdministratorsEditTest@1573f9fc</td></tr>
+<tr>
+<td title='testCases.TC025_DeliveryBoyEditTest.deliveryBoyEdit()'><b>deliveryBoyEdit</b><br>Test class: testCases.TC025_DeliveryBoyEditTest</td>
+<td><div><pre>java.lang.Throwable: Method TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@7e6f74c] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195615010", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195615010'><pre>java.lang.Throwable: Method TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@7e6f74c] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC025_DeliveryBoyEditTest@7e6f74c</td></tr>
+<tr>
+<td title='testCases.TC032_EmployeeDeleteTest.employeeDelete()'><b>employeeDelete</b><br>Test class: testCases.TC032_EmployeeDeleteTest</td>
+<td><div><pre>java.lang.Throwable: Method TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@5aa9e4eb] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace984235065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace984235065'><pre>java.lang.Throwable: Method TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@5aa9e4eb] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC032_EmployeeDeleteTest@5aa9e4eb</td></tr>
+<tr>
+<td title='testCases.TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()'><b>deliveryBoyDelete</b><br>Test class: testCases.TC026_DeliveryBoyDeleteTest</td>
+<td><div><pre>java.lang.Throwable: Method TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@dd05255] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace186049026", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace186049026'><pre>java.lang.Throwable: Method TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@dd05255] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC026_DeliveryBoyDeleteTest@dd05255</td></tr>
+<tr>
+<td title='testCases.TC031_EmployeeEditTest.employeeEdit()'><b>employeeEdit</b><br>Test class: testCases.TC031_EmployeeEditTest</td>
+<td><div><pre>java.lang.Throwable: Method TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@3fc2959f] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace189194499", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace189194499'><pre>java.lang.Throwable: Method TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@3fc2959f] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC031_EmployeeEditTest@3fc2959f</td></tr>
+<tr>
+<td title='testCases.TC028_CustomerEditTest.customerEdit()'><b>customerEdit</b><br>Test class: testCases.TC028_CustomerEditTest</td>
+<td><div><pre>java.lang.Throwable: Method TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@2f4948e4] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1385966234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1385966234'><pre>java.lang.Throwable: Method TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@2f4948e4] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC028_CustomerEditTest@2f4948e4</td></tr>
 <tr>
 <td title='testCases.TC029_CustomerDeleteTest.customerDelete()'><b>customerDelete</b><br>Test class: testCases.TC029_CustomerDeleteTest</td>
-<td></td>
-<td>2</td>
-<td>testCases.TC029_CustomerDeleteTest@408d971b</td></tr>
+<td><div><pre>java.lang.Throwable: Method TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@1f2586d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041742635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041742635'><pre>java.lang.Throwable: Method TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@1f2586d6] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC029_CustomerDeleteTest@1f2586d6</td></tr>
+<tr>
+<td title='testCases.TC023_AdministratorsDeleteTest.administratorsDelete()'><b>administratorsDelete</b><br>Test class: testCases.TC023_AdministratorsDeleteTest</td>
+<td><div><pre>java.lang.Throwable: Method TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@6150c3ec] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1164344728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1164344728'><pre>java.lang.Throwable: Method TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@6150c3ec] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>testCases.TC023_AdministratorsDeleteTest@6150c3ec</td></tr>
 </table><p>
 </body>
 </html>

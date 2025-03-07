@@ -24,6 +24,7 @@ public class TC021_AdministratorsAddTest extends BaseClass {
 
 			// Login Page
 			LoginPage loginPage = new LoginPage(driver);
+			
 			loginPage.setEmail(p.getProperty("adminEmail"));
 			loginPage.setPassword(p.getProperty("adminPassword"));
 			loginPage.clickLogin();

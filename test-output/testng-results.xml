@@ -1,213 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-06T01:39:07 GMT+06:00" name="Grouping XML Suite" finished-at="2025-03-06T01:40:33 GMT+06:00" duration-ms="86118">
+  <suite started-at="2025-03-08T03:19:55 GMT+06:00" name="Default suite" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="88089">
     <groups>
-      <group name="Master">
-        <method signature="TC021_AdministratorsAddTest.administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@51399530]" name="administratorsAdd" class="testCases.TC021_AdministratorsAddTest"/>
-        <method signature="TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@5bf0d49]" name="administratorsEdit" class="testCases.TC022_AdministratorsEditTest"/>
-        <method signature="TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@5b7a5baa]" name="administratorsDelete" class="testCases.TC023_AdministratorsDeleteTest"/>
-        <method signature="TC024_DeliveryBoyAddTest.deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@776aec5c]" name="deliveryBoyAdd" class="testCases.TC024_DeliveryBoyAddTest"/>
-        <method signature="TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1d296da]" name="deliveryBoyEdit" class="testCases.TC025_DeliveryBoyEditTest"/>
-        <method signature="TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec]" name="deliveryBoyDelete" class="testCases.TC026_DeliveryBoyDeleteTest"/>
-        <method signature="TC027_CustomerAddTest.customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@75d4a5c2]" name="customerAdd" class="testCases.TC027_CustomerAddTest"/>
-        <method signature="TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@557caf28]" name="customerEdit" class="testCases.TC028_CustomerEditTest"/>
-        <method signature="TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@408d971b]" name="customerDelete" class="testCases.TC029_CustomerDeleteTest"/>
-        <method signature="TC030_EmployeeAddTest.employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@6c6cb480]" name="employeeAdd" class="testCases.TC030_EmployeeAddTest"/>
-        <method signature="TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@3c46e67a]" name="employeeEdit" class="testCases.TC031_EmployeeEditTest"/>
-        <method signature="TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@c730b35]" name="employeeDelete" class="testCases.TC032_EmployeeDeleteTest"/>
-      </group> <!-- Master -->
-      <group name="DeliveryBoy">
-        <method signature="TC024_DeliveryBoyAddTest.deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@776aec5c]" name="deliveryBoyAdd" class="testCases.TC024_DeliveryBoyAddTest"/>
-        <method signature="TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1d296da]" name="deliveryBoyEdit" class="testCases.TC025_DeliveryBoyEditTest"/>
-        <method signature="TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec]" name="deliveryBoyDelete" class="testCases.TC026_DeliveryBoyDeleteTest"/>
-      </group> <!-- DeliveryBoy -->
-      <group name="Employee">
-        <method signature="TC030_EmployeeAddTest.employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@6c6cb480]" name="employeeAdd" class="testCases.TC030_EmployeeAddTest"/>
-        <method signature="TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@3c46e67a]" name="employeeEdit" class="testCases.TC031_EmployeeEditTest"/>
-        <method signature="TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@c730b35]" name="employeeDelete" class="testCases.TC032_EmployeeDeleteTest"/>
-      </group> <!-- Employee -->
-      <group name="Customer">
-        <method signature="TC027_CustomerAddTest.customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@75d4a5c2]" name="customerAdd" class="testCases.TC027_CustomerAddTest"/>
-        <method signature="TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@557caf28]" name="customerEdit" class="testCases.TC028_CustomerEditTest"/>
-        <method signature="TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@408d971b]" name="customerDelete" class="testCases.TC029_CustomerDeleteTest"/>
-      </group> <!-- Customer -->
-      <group name="Admin">
-        <method signature="TC021_AdministratorsAddTest.administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@51399530]" name="administratorsAdd" class="testCases.TC021_AdministratorsAddTest"/>
-        <method signature="TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@5bf0d49]" name="administratorsEdit" class="testCases.TC022_AdministratorsEditTest"/>
-        <method signature="TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@5b7a5baa]" name="administratorsDelete" class="testCases.TC023_AdministratorsDeleteTest"/>
-      </group> <!-- Admin -->
     </groups>
-    <test started-at="2025-03-06T01:39:07 GMT+06:00" name="Test" finished-at="2025-03-06T01:40:33 GMT+06:00" duration-ms="86118">
-      <class name="testCases.TC024_DeliveryBoyAddTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@776aec5c]" started-at="2025-03-06T01:39:29 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:31 GMT+06:00" duration-ms="2243" status="PASS">
+    <test started-at="2025-03-08T03:19:55 GMT+06:00" name="Default test" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="88089">
+      <class name="testCases.TC033_LoginDDT">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:19:55 GMT+06:00" name="setup" finished-at="2025-03-08T03:19:59 GMT+06:00" duration-ms="4492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@776aec5c]" started-at="2025-03-06T01:39:31 GMT+06:00" name="deliveryBoyAdd" finished-at="2025-03-06T01:39:34 GMT+06:00" duration-ms="3402" status="PASS">
+        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:00 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:20:21 GMT+06:00" duration-ms="20440" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[anon123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deliveryBoyAdd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@776aec5c]" started-at="2025-03-06T01:39:34 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:34 GMT+06:00" duration-ms="140" status="PASS">
+        </test-method> <!-- verify_loginDDT -->
+        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:21 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:20:41 GMT+06:00" duration-ms="20326" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[islam@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_loginDDT -->
+        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:41 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:01 GMT+06:00" duration-ms="20341" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jamur@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_loginDDT -->
+        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:01 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:22 GMT+06:00" duration-ms="20274" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nawshin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_loginDDT -->
+        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:22 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="1117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:23 GMT+06:00" name="tearDown" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC024_DeliveryBoyAddTest -->
-      <class name="testCases.TC031_EmployeeEditTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC031_EmployeeEditTest@3c46e67a]" started-at="2025-03-06T01:40:17 GMT+06:00" name="setup" finished-at="2025-03-06T01:40:20 GMT+06:00" duration-ms="2632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@3c46e67a]" started-at="2025-03-06T01:40:20 GMT+06:00" name="employeeEdit" finished-at="2025-03-06T01:40:28 GMT+06:00" depends-on-methods="testCases.TC030_EmployeeAddTest.employeeAdd" duration-ms="7955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- employeeEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC031_EmployeeEditTest@3c46e67a]" started-at="2025-03-06T01:40:28 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:40:28 GMT+06:00" duration-ms="417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC031_EmployeeEditTest -->
-      <class name="testCases.TC027_CustomerAddTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC027_CustomerAddTest@75d4a5c2]" started-at="2025-03-06T01:39:50 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:53 GMT+06:00" duration-ms="2659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@75d4a5c2]" started-at="2025-03-06T01:39:53 GMT+06:00" name="customerAdd" finished-at="2025-03-06T01:39:56 GMT+06:00" duration-ms="3448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerAdd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC027_CustomerAddTest@75d4a5c2]" started-at="2025-03-06T01:39:56 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:56 GMT+06:00" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC027_CustomerAddTest -->
-      <class name="testCases.TC026_DeliveryBoyDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec]" started-at="2025-03-06T01:39:44 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:47 GMT+06:00" duration-ms="2686" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec]" started-at="2025-03-06T01:39:47 GMT+06:00" name="deliveryBoyDelete" finished-at="2025-03-06T01:39:50 GMT+06:00" depends-on-methods="testCases.TC025_DeliveryBoyEditTest.deliveryBoyEdit" duration-ms="2652" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deliveryBoyDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@7c7a06ec]" started-at="2025-03-06T01:39:50 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:50 GMT+06:00" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC026_DeliveryBoyDeleteTest -->
-      <class name="testCases.TC023_AdministratorsDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@5b7a5baa]" started-at="2025-03-06T01:39:24 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:26 GMT+06:00" duration-ms="2180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@5b7a5baa]" started-at="2025-03-06T01:39:26 GMT+06:00" name="administratorsDelete" finished-at="2025-03-06T01:39:28 GMT+06:00" depends-on-methods="testCases.TC022_AdministratorsEditTest.administratorsEdit" duration-ms="2484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- administratorsDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@5b7a5baa]" started-at="2025-03-06T01:39:28 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:29 GMT+06:00" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC023_AdministratorsDeleteTest -->
-      <class name="testCases.TC022_AdministratorsEditTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC022_AdministratorsEditTest@5bf0d49]" started-at="2025-03-06T01:39:14 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:16 GMT+06:00" duration-ms="2273" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@5bf0d49]" started-at="2025-03-06T01:39:16 GMT+06:00" name="administratorsEdit" finished-at="2025-03-06T01:39:24 GMT+06:00" depends-on-methods="testCases.TC021_AdministratorsAddTest.administratorsAdd" duration-ms="7599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- administratorsEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC022_AdministratorsEditTest@5bf0d49]" started-at="2025-03-06T01:39:24 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:24 GMT+06:00" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC022_AdministratorsEditTest -->
-      <class name="testCases.TC029_CustomerDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC029_CustomerDeleteTest@408d971b]" started-at="2025-03-06T01:40:06 GMT+06:00" name="setup" finished-at="2025-03-06T01:40:08 GMT+06:00" duration-ms="2150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@408d971b]" started-at="2025-03-06T01:40:08 GMT+06:00" name="customerDelete" finished-at="2025-03-06T01:40:11 GMT+06:00" depends-on-methods="testCases.TC028_CustomerEditTest.customerEdit" duration-ms="2826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC029_CustomerDeleteTest@408d971b]" started-at="2025-03-06T01:40:11 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:40:11 GMT+06:00" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC029_CustomerDeleteTest -->
-      <class name="testCases.TC032_EmployeeDeleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@c730b35]" started-at="2025-03-06T01:40:28 GMT+06:00" name="setup" finished-at="2025-03-06T01:40:31 GMT+06:00" duration-ms="2219" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@c730b35]" started-at="2025-03-06T01:40:31 GMT+06:00" name="employeeDelete" finished-at="2025-03-06T01:40:33 GMT+06:00" depends-on-methods="testCases.TC031_EmployeeEditTest.employeeEdit" duration-ms="2521" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- employeeDelete -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@c730b35]" started-at="2025-03-06T01:40:33 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:40:33 GMT+06:00" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC032_EmployeeDeleteTest -->
-      <class name="testCases.TC030_EmployeeAddTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC030_EmployeeAddTest@6c6cb480]" started-at="2025-03-06T01:40:11 GMT+06:00" name="setup" finished-at="2025-03-06T01:40:14 GMT+06:00" duration-ms="2262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@6c6cb480]" started-at="2025-03-06T01:40:14 GMT+06:00" name="employeeAdd" finished-at="2025-03-06T01:40:17 GMT+06:00" duration-ms="3756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- employeeAdd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC030_EmployeeAddTest@6c6cb480]" started-at="2025-03-06T01:40:17 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:40:17 GMT+06:00" duration-ms="147" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC030_EmployeeAddTest -->
-      <class name="testCases.TC025_DeliveryBoyEditTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1d296da]" started-at="2025-03-06T01:39:34 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:36 GMT+06:00" duration-ms="2135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1d296da]" started-at="2025-03-06T01:39:36 GMT+06:00" name="deliveryBoyEdit" finished-at="2025-03-06T01:39:44 GMT+06:00" depends-on-methods="testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd" duration-ms="7819" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deliveryBoyEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@1d296da]" started-at="2025-03-06T01:39:44 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:44 GMT+06:00" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC025_DeliveryBoyEditTest -->
-      <class name="testCases.TC021_AdministratorsAddTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC021_AdministratorsAddTest@51399530]" started-at="2025-03-06T01:39:07 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:10 GMT+06:00" duration-ms="2853" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@51399530]" started-at="2025-03-06T01:39:10 GMT+06:00" name="administratorsAdd" finished-at="2025-03-06T01:39:13 GMT+06:00" duration-ms="3440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- administratorsAdd -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC021_AdministratorsAddTest@51399530]" started-at="2025-03-06T01:39:14 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:39:14 GMT+06:00" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC021_AdministratorsAddTest -->
-      <class name="testCases.TC028_CustomerEditTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC028_CustomerEditTest@557caf28]" started-at="2025-03-06T01:39:56 GMT+06:00" name="setup" finished-at="2025-03-06T01:39:58 GMT+06:00" duration-ms="2135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@557caf28]" started-at="2025-03-06T01:39:58 GMT+06:00" name="customerEdit" finished-at="2025-03-06T01:40:06 GMT+06:00" depends-on-methods="testCases.TC027_CustomerAddTest.customerAdd" duration-ms="7758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- customerEdit -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC028_CustomerEditTest@557caf28]" started-at="2025-03-06T01:40:06 GMT+06:00" name="tearDown" finished-at="2025-03-06T01:40:06 GMT+06:00" duration-ms="159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC028_CustomerEditTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Grouping XML Suite -->
+      </class> <!-- testCases.TC033_LoginDDT -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
