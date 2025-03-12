@@ -4,14 +4,18 @@
 
 <suite name="Data Driven Group XML Suite">
 
-
+    <!-- Liseners For Generate Extent Report
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager" />
+	</listeners>
+-->
 	<test thread-count="5" name="Test">
 
 		<classes>
 			<class name="testCases.TC033_LoginDDT" />
 		</classes>
-		
-	</test> 
-	
+
+	</test>
+
 </suite> 
 

@@ -26,19 +26,19 @@ public class TC033_LoginDDT extends BaseClass {
 			loginPage.setPassword(pwd);
 			loginPage.clickLogin();
 
-			String toasterNoti = loginPage.toaster();
-			System.out.println("Notification Is: " + toasterNoti);
+			String toasterNotification = loginPage.toaster();
+			System.out.println("Notification Is: " + toasterNotification);
 
 			// Assert that the toaster notification contains the expected text
-			Assert.assertTrue(toasterNoti.contains("Login Successfully"),
-					"Toaster notification text mismatch. Expected: 'Login Successfully', Actual: " + toasterNoti);
+			Assert.assertTrue(toasterNotification.contains("Login Successfully"),
+					"Toaster notification text mismatch. Expected: 'Login Successfully', Actual: " + toasterNotification);
 
-			
 		} catch (Exception e) {
 
 			e.printStackTrace();
 			Assert.fail("Test failed due to an exception: " + e.getMessage());
 		}
+		
 		logger.info("***** Finished TC033_LoginDDT *****");
 
 	}

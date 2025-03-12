@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Retry Failed Tests XML Suite" verbose="1">
+
+	<listeners>
+		<listener class-name="utilities.AnnotationTransformer" />
+	</listeners>
+
+
+	<test name="Retry Mulitple Tests">
+		<classes>
+			<class name="testCases.TC021_AdministratorsAddTest" />
+			<class name="testCases.TC022_AdministratorsEditTest" />
+			<class name="testCases.TC023_AdministratorsDeleteTest" />
+			<class name="testCases.TC024_DeliveryBoyAddTest" />
+			<class name="testCases.TC025_DeliveryBoyEditTest" />
+			<class name="testCases.TC026_DeliveryBoyDeleteTest" />
+			<class name="testCases.TC027_CustomerAddTest" />
+			<class name="testCases.TC028_CustomerEditTest" />
+			<class name="testCases.TC029_CustomerDeleteTest" />
+			<class name="testCases.TC030_EmployeeAddTest" />
+			<class name="testCases.TC031_EmployeeEditTest" />
+			<class name="testCases.TC032_EmployeeDeleteTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,13 +1,18 @@
 package testBase;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -26,8 +31,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	//public static WebDriver driver;
-	public  WebDriver driver;
+	public static WebDriver driver;
+	//public  WebDriver driver;
 	public Logger logger;
 	public Properties p;
 
@@ -52,7 +57,7 @@ public class BaseClass {
 //		}
 
 		driver = new ChromeDriver();
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(p.getProperty("Url"));
 		driver.manage().window().maximize();
@@ -63,4 +68,21 @@ public class BaseClass {
 	public void tearDown() {
 		driver.quit();
 	}
+	
+	// To Capture Failure Cases ScreenShots
+	
+	  public String captureScreen(String tname) throws IOException {
+	    	
+	    	String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+	   
+	        TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+	        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+	        
+	        String targetFilePath = System.getProperty("user.dir")+"\\screenshots\\" + tname + "_" + timeStamp + ".png"; 
+	        File targetFile = new File(targetFilePath);
+	        
+	        sourceFile.renameTo(targetFile);
+	        
+	        return targetFilePath;
+	    }
 }

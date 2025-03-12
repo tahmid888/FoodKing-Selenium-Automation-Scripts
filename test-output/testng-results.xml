@@ -1,44 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+<testng-results retried="8" ignored="0" total="20" passed="0" failed="4" skipped="8">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-08T03:19:55 GMT+06:00" name="Default suite" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="88089">
+  <suite started-at="2025-03-13T02:54:41 GMT+06:00" name="Retry Failed Tests XML Suite" finished-at="2025-03-13T02:57:29 GMT+06:00" duration-ms="167514">
     <groups>
+      <group name="Master">
+        <method signature="TC021_AdministratorsAddTest.administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" name="administratorsAdd" class="testCases.TC021_AdministratorsAddTest"/>
+        <method signature="TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c]" name="administratorsEdit" class="testCases.TC022_AdministratorsEditTest"/>
+        <method signature="TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a]" name="administratorsDelete" class="testCases.TC023_AdministratorsDeleteTest"/>
+        <method signature="TC024_DeliveryBoyAddTest.deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" name="deliveryBoyAdd" class="testCases.TC024_DeliveryBoyAddTest"/>
+        <method signature="TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249]" name="deliveryBoyEdit" class="testCases.TC025_DeliveryBoyEditTest"/>
+        <method signature="TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a]" name="deliveryBoyDelete" class="testCases.TC026_DeliveryBoyDeleteTest"/>
+        <method signature="TC027_CustomerAddTest.customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" name="customerAdd" class="testCases.TC027_CustomerAddTest"/>
+        <method signature="TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f]" name="customerEdit" class="testCases.TC028_CustomerEditTest"/>
+        <method signature="TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668]" name="customerDelete" class="testCases.TC029_CustomerDeleteTest"/>
+        <method signature="TC030_EmployeeAddTest.employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" name="employeeAdd" class="testCases.TC030_EmployeeAddTest"/>
+        <method signature="TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b]" name="employeeEdit" class="testCases.TC031_EmployeeEditTest"/>
+        <method signature="TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff]" name="employeeDelete" class="testCases.TC032_EmployeeDeleteTest"/>
+      </group> <!-- Master -->
+      <group name="DeliveryBoy">
+        <method signature="TC024_DeliveryBoyAddTest.deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" name="deliveryBoyAdd" class="testCases.TC024_DeliveryBoyAddTest"/>
+        <method signature="TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249]" name="deliveryBoyEdit" class="testCases.TC025_DeliveryBoyEditTest"/>
+        <method signature="TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a]" name="deliveryBoyDelete" class="testCases.TC026_DeliveryBoyDeleteTest"/>
+      </group> <!-- DeliveryBoy -->
+      <group name="Employee">
+        <method signature="TC030_EmployeeAddTest.employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" name="employeeAdd" class="testCases.TC030_EmployeeAddTest"/>
+        <method signature="TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b]" name="employeeEdit" class="testCases.TC031_EmployeeEditTest"/>
+        <method signature="TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff]" name="employeeDelete" class="testCases.TC032_EmployeeDeleteTest"/>
+      </group> <!-- Employee -->
+      <group name="Customer">
+        <method signature="TC027_CustomerAddTest.customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" name="customerAdd" class="testCases.TC027_CustomerAddTest"/>
+        <method signature="TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f]" name="customerEdit" class="testCases.TC028_CustomerEditTest"/>
+        <method signature="TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668]" name="customerDelete" class="testCases.TC029_CustomerDeleteTest"/>
+      </group> <!-- Customer -->
+      <group name="Admin">
+        <method signature="TC021_AdministratorsAddTest.administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" name="administratorsAdd" class="testCases.TC021_AdministratorsAddTest"/>
+        <method signature="TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c]" name="administratorsEdit" class="testCases.TC022_AdministratorsEditTest"/>
+        <method signature="TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a]" name="administratorsDelete" class="testCases.TC023_AdministratorsDeleteTest"/>
+      </group> <!-- Admin -->
     </groups>
-    <test started-at="2025-03-08T03:19:55 GMT+06:00" name="Default test" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="88089">
-      <class name="testCases.TC033_LoginDDT">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:19:55 GMT+06:00" name="setup" finished-at="2025-03-08T03:19:59 GMT+06:00" duration-ms="4492" status="PASS">
+    <test started-at="2025-03-13T02:54:41 GMT+06:00" name="Retry Mulitple Tests" finished-at="2025-03-13T02:57:29 GMT+06:00" duration-ms="167514">
+      <class name="testCases.TC024_DeliveryBoyAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" started-at="2025-03-13T02:55:23 GMT+06:00" name="setup" finished-at="2025-03-13T02:55:26 GMT+06:00" duration-ms="2604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:00 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:20:21 GMT+06:00" duration-ms="20440" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[anon123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
+        <test-method retried="true" signature="deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" started-at="2025-03-13T02:55:26 GMT+06:00" name="deliveryBoyAdd" finished-at="2025-03-13T02:55:39 GMT+06:00" duration-ms="13428" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+              <![CDATA[Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd(TC024_DeliveryBoyAddTest.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -70,41 +85,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:21 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:20:41 GMT+06:00" duration-ms="20326" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[islam@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testa]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- deliveryBoyAdd -->
+        <test-method retried="true" signature="deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" started-at="2025-03-13T02:55:39 GMT+06:00" name="deliveryBoyAdd" finished-at="2025-03-13T02:55:49 GMT+06:00" duration-ms="10010" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f3933a536cfe6c66a0781f9164f35e9, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54010/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f3933a536cfe6c66a0781f9164f35e9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f3933a536cfe6c66a0781f9164f35e9, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54010/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f3933a536cfe6c66a0781f9164f35e9
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd(TC024_DeliveryBoyAddTest.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -130,41 +142,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:20:41 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:01 GMT+06:00" duration-ms="20341" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[jamur@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testb]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- deliveryBoyAdd -->
+        <test-method signature="deliveryBoyAdd()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" started-at="2025-03-13T02:55:49 GMT+06:00" name="deliveryBoyAdd" finished-at="2025-03-13T02:55:59 GMT+06:00" duration-ms="10032" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f3933a536cfe6c66a0781f9164f35e9, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54010/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f3933a536cfe6c66a0781f9164f35e9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8f3933a536cfe6c66a0781f9164f35e9, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54010}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54010/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f3933a536cfe6c66a0781f9164f35e9
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
+at testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd(TC024_DeliveryBoyAddTest.java:58)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -190,93 +199,843 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:01 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:22 GMT+06:00" duration-ms="20274" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nawshin@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[testc]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Toaster notification text mismatch. Expected: 'Login Successfully', Actual: Toaster notification not found or text not visible expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at testCases.TC033_LoginDDT.verify_loginDDT(TC033_LoginDDT.java:33)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:22 GMT+06:00" name="verify_loginDDT" data-provider="LoginData" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="1117" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@example.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC033_LoginDDT@6b2ea799]" started-at="2025-03-08T03:21:23 GMT+06:00" name="tearDown" finished-at="2025-03-08T03:21:23 GMT+06:00" duration-ms="160" status="PASS">
+        </test-method> <!-- deliveryBoyAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC024_DeliveryBoyAddTest@6025e1b6]" started-at="2025-03-13T02:55:59 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:55:59 GMT+06:00" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC033_LoginDDT -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.TC024_DeliveryBoyAddTest -->
+      <class name="testCases.TC031_EmployeeEditTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b]" started-at="2025-03-13T02:57:24 GMT+06:00" name="setup" finished-at="2025-03-13T02:57:26 GMT+06:00" duration-ms="2366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b]" started-at="2025-03-13T02:57:26 GMT+06:00" name="employeeEdit" finished-at="2025-03-13T02:57:26 GMT+06:00" depends-on-methods="testCases.TC030_EmployeeAddTest.employeeAdd" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC031_EmployeeEditTest.employeeEdit()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeEdit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC031_EmployeeEditTest@4c12331b]" started-at="2025-03-13T02:57:26 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:57:27 GMT+06:00" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC031_EmployeeEditTest -->
+      <class name="testCases.TC027_CustomerAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" started-at="2025-03-13T02:56:05 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:08 GMT+06:00" duration-ms="3480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" started-at="2025-03-13T02:56:08 GMT+06:00" name="customerAdd" finished-at="2025-03-13T02:56:22 GMT+06:00" duration-ms="13452" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC027_CustomerAddTest.customerAdd(TC027_CustomerAddTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAdd -->
+        <test-method retried="true" signature="customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" started-at="2025-03-13T02:56:22 GMT+06:00" name="customerAdd" finished-at="2025-03-13T02:56:32 GMT+06:00" duration-ms="10012" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df41eaebae68b552e128f6a000a59458, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54074/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df41eaebae68b552e128f6a000a59458]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df41eaebae68b552e128f6a000a59458, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54074/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df41eaebae68b552e128f6a000a59458
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC027_CustomerAddTest.customerAdd(TC027_CustomerAddTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAdd -->
+        <test-method signature="customerAdd()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" started-at="2025-03-13T02:56:32 GMT+06:00" name="customerAdd" finished-at="2025-03-13T02:56:42 GMT+06:00" duration-ms="10035" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df41eaebae68b552e128f6a000a59458, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54074/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df41eaebae68b552e128f6a000a59458]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [df41eaebae68b552e128f6a000a59458, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54074}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54074/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: df41eaebae68b552e128f6a000a59458
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC027_CustomerAddTest.customerAdd(TC027_CustomerAddTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC027_CustomerAddTest@4c402120]" started-at="2025-03-13T02:56:42 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:56:42 GMT+06:00" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC027_CustomerAddTest -->
+      <class name="testCases.TC026_DeliveryBoyDeleteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a]" started-at="2025-03-13T02:56:02 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:05 GMT+06:00" duration-ms="2633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a]" started-at="2025-03-13T02:56:05 GMT+06:00" name="deliveryBoyDelete" finished-at="2025-03-13T02:56:05 GMT+06:00" depends-on-methods="testCases.TC025_DeliveryBoyEditTest.deliveryBoyEdit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC026_DeliveryBoyDeleteTest.deliveryBoyDelete()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliveryBoyDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC026_DeliveryBoyDeleteTest@2d1ef81a]" started-at="2025-03-13T02:56:05 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:56:05 GMT+06:00" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC026_DeliveryBoyDeleteTest -->
+      <class name="testCases.TC023_AdministratorsDeleteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a]" started-at="2025-03-13T02:55:20 GMT+06:00" name="setup" finished-at="2025-03-13T02:55:23 GMT+06:00" duration-ms="2557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a]" started-at="2025-03-13T02:55:23 GMT+06:00" name="administratorsDelete" finished-at="2025-03-13T02:55:23 GMT+06:00" depends-on-methods="testCases.TC022_AdministratorsEditTest.administratorsEdit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC023_AdministratorsDeleteTest.administratorsDelete()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- administratorsDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC023_AdministratorsDeleteTest@40a4337a]" started-at="2025-03-13T02:55:23 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:55:23 GMT+06:00" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC023_AdministratorsDeleteTest -->
+      <class name="testCases.TC022_AdministratorsEditTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c]" started-at="2025-03-13T02:55:18 GMT+06:00" name="setup" finished-at="2025-03-13T02:55:20 GMT+06:00" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c]" started-at="2025-03-13T02:55:20 GMT+06:00" name="administratorsEdit" finished-at="2025-03-13T02:55:20 GMT+06:00" depends-on-methods="testCases.TC021_AdministratorsAddTest.administratorsAdd" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC022_AdministratorsEditTest.administratorsEdit()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- administratorsEdit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC022_AdministratorsEditTest@6a6cb05c]" started-at="2025-03-13T02:55:20 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:55:20 GMT+06:00" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC022_AdministratorsEditTest -->
+      <class name="testCases.TC029_CustomerDeleteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668]" started-at="2025-03-13T02:56:45 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:47 GMT+06:00" duration-ms="2910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668]" started-at="2025-03-13T02:56:47 GMT+06:00" name="customerDelete" finished-at="2025-03-13T02:56:47 GMT+06:00" depends-on-methods="testCases.TC028_CustomerEditTest.customerEdit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC029_CustomerDeleteTest.customerDelete()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC029_CustomerDeleteTest@5b12b668]" started-at="2025-03-13T02:56:47 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:56:48 GMT+06:00" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC029_CustomerDeleteTest -->
+      <class name="testCases.TC032_EmployeeDeleteTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff]" started-at="2025-03-13T02:57:27 GMT+06:00" name="setup" finished-at="2025-03-13T02:57:28 GMT+06:00" duration-ms="1964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff]" started-at="2025-03-13T02:57:28 GMT+06:00" name="employeeDelete" finished-at="2025-03-13T02:57:28 GMT+06:00" depends-on-methods="testCases.TC031_EmployeeEditTest.employeeEdit" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC032_EmployeeDeleteTest.employeeDelete()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeDelete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC032_EmployeeDeleteTest@7586beff]" started-at="2025-03-13T02:57:28 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:57:29 GMT+06:00" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC032_EmployeeDeleteTest -->
+      <class name="testCases.TC030_EmployeeAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" started-at="2025-03-13T02:56:48 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:50 GMT+06:00" duration-ms="2548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" started-at="2025-03-13T02:56:50 GMT+06:00" name="employeeAdd" finished-at="2025-03-13T02:57:04 GMT+06:00" duration-ms="13493" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC030_EmployeeAddTest.employeeAdd(TC030_EmployeeAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeAdd -->
+        <test-method retried="true" signature="employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" started-at="2025-03-13T02:57:04 GMT+06:00" name="employeeAdd" finished-at="2025-03-13T02:57:14 GMT+06:00" duration-ms="10028" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8db93f9addb648c69d4b07056c3d94a, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54137/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8db93f9addb648c69d4b07056c3d94a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8db93f9addb648c69d4b07056c3d94a, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54137/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8db93f9addb648c69d4b07056c3d94a
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC030_EmployeeAddTest.employeeAdd(TC030_EmployeeAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeAdd -->
+        <test-method signature="employeeAdd()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" started-at="2025-03-13T02:57:14 GMT+06:00" name="employeeAdd" finished-at="2025-03-13T02:57:24 GMT+06:00" duration-ms="10052" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8db93f9addb648c69d4b07056c3d94a, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54137/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8db93f9addb648c69d4b07056c3d94a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8db93f9addb648c69d4b07056c3d94a, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54137}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54137/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8db93f9addb648c69d4b07056c3d94a
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC030_EmployeeAddTest.employeeAdd(TC030_EmployeeAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- employeeAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC030_EmployeeAddTest@1165b38]" started-at="2025-03-13T02:57:24 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:57:24 GMT+06:00" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC030_EmployeeAddTest -->
+      <class name="testCases.TC025_DeliveryBoyEditTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249]" started-at="2025-03-13T02:55:59 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:02 GMT+06:00" duration-ms="2464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249]" started-at="2025-03-13T02:56:02 GMT+06:00" name="deliveryBoyEdit" finished-at="2025-03-13T02:56:02 GMT+06:00" depends-on-methods="testCases.TC024_DeliveryBoyAddTest.deliveryBoyAdd" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC025_DeliveryBoyEditTest.deliveryBoyEdit()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deliveryBoyEdit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC025_DeliveryBoyEditTest@22ff4249]" started-at="2025-03-13T02:56:02 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:56:02 GMT+06:00" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC025_DeliveryBoyEditTest -->
+      <class name="testCases.TC021_AdministratorsAddTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" started-at="2025-03-13T02:54:41 GMT+06:00" name="setup" finished-at="2025-03-13T02:54:44 GMT+06:00" duration-ms="3266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" started-at="2025-03-13T02:54:44 GMT+06:00" name="administratorsAdd" finished-at="2025-03-13T02:54:58 GMT+06:00" duration-ms="13286" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: Expected condition failed: waiting for presence of element located by: By.xpath: //td[contains(normalize-space(), "Elon Musk")] (tried for 10 second(s) with 500 milliseconds interval)
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC021_AdministratorsAddTest.administratorsAdd(TC021_AdministratorsAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- administratorsAdd -->
+        <test-method retried="true" signature="administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" started-at="2025-03-13T02:54:58 GMT+06:00" name="administratorsAdd" finished-at="2025-03-13T02:55:08 GMT+06:00" duration-ms="10059" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3bb7ad37c52faae69821fe8622c429b, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53946/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3bb7ad37c52faae69821fe8622c429b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3bb7ad37c52faae69821fe8622c429b, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53946/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3bb7ad37c52faae69821fe8622c429b
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC021_AdministratorsAddTest.administratorsAdd(TC021_AdministratorsAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- administratorsAdd -->
+        <test-method signature="administratorsAdd()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" started-at="2025-03-13T02:55:08 GMT+06:00" name="administratorsAdd" finished-at="2025-03-13T02:55:18 GMT+06:00" duration-ms="10020" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3bb7ad37c52faae69821fe8622c429b, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53946/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3bb7ad37c52faae69821fe8622c429b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed due to an exception: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='whitespace-nowrap'][normalize-space()='Log in']"}
+  (Session info: chrome=134.0.6998.36)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e3bb7ad37c52faae69821fe8622c429b, findElement {using=xpath, value=//span[@class='whitespace-nowrap'][normalize-space()='Log in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\tahmi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53946/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e3bb7ad37c52faae69821fe8622c429b
+at org.testng.Assert.fail(Assert.java:99)
+at testCases.TC021_AdministratorsAddTest.administratorsAdd(TC021_AdministratorsAddTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- administratorsAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC021_AdministratorsAddTest@22555ebf]" started-at="2025-03-13T02:55:18 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:55:18 GMT+06:00" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC021_AdministratorsAddTest -->
+      <class name="testCases.TC028_CustomerEditTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f]" started-at="2025-03-13T02:56:42 GMT+06:00" name="setup" finished-at="2025-03-13T02:56:44 GMT+06:00" duration-ms="2426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f]" started-at="2025-03-13T02:56:44 GMT+06:00" name="customerEdit" finished-at="2025-03-13T02:56:44 GMT+06:00" depends-on-methods="testCases.TC027_CustomerAddTest.customerAdd" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC028_CustomerEditTest.customerEdit()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerEdit -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC028_CustomerEditTest@327514f]" started-at="2025-03-13T02:56:44 GMT+06:00" name="tearDown" finished-at="2025-03-13T02:56:45 GMT+06:00" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC028_CustomerEditTest -->
+    </test> <!-- Retry Mulitple Tests -->
+  </suite> <!-- Retry Failed Tests XML Suite -->
 </testng-results>
