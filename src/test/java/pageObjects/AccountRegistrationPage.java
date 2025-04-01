@@ -23,6 +23,9 @@ public class AccountRegistrationPage extends BasePage {
 
 	@FindBy(xpath = "//button[normalize-space()='Next']")
 	WebElement btnNext;
+	
+	@FindBy(className="db-field-alert")
+	WebElement alert;
 
 	// Wait for the toast notification to appear
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -77,6 +80,9 @@ public class AccountRegistrationPage extends BasePage {
 		btnSignup.click();
 	}
 	
+	public String getAlertMessage() {
+	return	alert.getText();
+	}
 
 	
 

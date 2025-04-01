@@ -12,7 +12,8 @@ public class DataProviders {
 	public String[][] getData() throws IOException
 
 	{
-		String path = ".\\testData\\LoginData.xlsx";
+		// Excel file path
+		String path = ".\\testData\\LoginData.xlsx"; 
 
 		ExcelUtility xlutil = new ExcelUtility(path);
 
